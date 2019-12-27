@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.elin.elindriverschool.activity.CheckTemplateActivity">
+    <include layout="@layout/custom_go_back"
+        android:id="@+id/title_check_template"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_check_template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_check_template">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_check_template"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <Button
+        android:id="@+id/btn_empty_create_template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/select_border_login"
+        android:text="创建时间模板"
+        android:textColor="@color/white"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:visibility="gone"/>
+</RelativeLayout>

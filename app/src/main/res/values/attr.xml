@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="timePickerMode">
+        <!-- Time picker with spinner controls to select the time. -->
+        <enum name="spinner" value="1" />
+        <!-- Time picker with clock face to select the time. -->
+        <enum name="clock" value="2" />
+    </attr>
+</resources>

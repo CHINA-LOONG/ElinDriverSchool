@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_add_appoint"
+        android:orderInCategory="100"
+        android:title="新增培训计划"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/appoint_templet"
+        android:orderInCategory="100"
+        android:title="培   训  模   板"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_my_all_appoint"
+        android:orderInCategory="100"
+        android:title="我的全部计划"
+        app:showAsAction="never" />
+
+</menu>

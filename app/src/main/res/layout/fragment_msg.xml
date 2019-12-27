@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_color_gray"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_message"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_msg_module"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:paddingLeft="8dp"
+        android:layout_below="@+id/rl_title_message"/>
+
+    <LinearLayout
+        android:id="@+id/ll_notice_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rv_msg_module"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="6dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_msg_menu" />
+        <TextView
+            android:id="@+id/tv_msg_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_nomal"
+            android:textSize="@dimen/text_normal_size" />
+        <TextView
+            android:id="@+id/tv_read_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="一键全读"
+            android:gravity="end"
+            android:paddingRight="16dp"
+            android:visibility="gone"
+            android:textColor="@drawable/text_press_preview"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/line_notice"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color_gray"
+        android:layout_below="@+id/ll_notice_list"/>
+    <RelativeLayout
+        android:id="@+id/rl_msg_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_notice"/>
+
+</RelativeLayout>

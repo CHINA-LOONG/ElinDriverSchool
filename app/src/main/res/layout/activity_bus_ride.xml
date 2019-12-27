@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.elin.elindriverschool.activity.BusRideActivity">
+
+    <include android:id="@+id/ll_busride_title"
+        layout="@layout/custom_go_back"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_busride"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/marginLeft"
+                android:paddingRight="@dimen/marginLeft"
+                android:paddingTop="@dimen/marginLeft">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_nomal"
+                    android:text="科目乘坐查询："
+                    android:textSize="@dimen/text_small_size"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/edit_shape"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/sp_busride"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/marginLeft"
+                android:paddingRight="@dimen/marginLeft">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="班车发车时间："
+                    android:textSize="@dimen/text_small_size" />
+                <TextView
+                    android:id="@+id/tv_busride_date"
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:text="选择日期"
+                    android:background="@drawable/edit_shape"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/bottom_navigation_elevation"
+                    android:textSize="@dimen/text_small_size"
+                    android:textColor="@color/text_color_nomal" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_busride_query"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="查询"
+                    android:background="@drawable/select_register_btn"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="7dp"
+                    android:layout_marginRight="8dp"/>
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/bg_gray"
+                android:layout_marginTop="8dp"/>
+            <LinearLayout
+                android:id="@+id/ll_busride_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_busride"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <include android:id="@+id/ll_busride_nodata"
+                    android:visibility="gone"
+                    layout="@layout/layout_bg_nodata"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

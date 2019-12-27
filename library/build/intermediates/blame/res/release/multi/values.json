@@ -1,0 +1,146 @@
+[
+    {
+        "outputFile": "D:\\elin\\jiakaozhixing\\ElinDriverSchool\\library\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2043,
+                    "endColumn": 38,
+                    "endOffset": 2077
+                },
+                "from": {
+                    "file": "D:\\elin\\jiakaozhixing\\ElinDriverSchool\\library\\src\\main\\res\\values\\ids.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 39,
+                        "endOffset": 94
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2082,
+                    "endColumn": 45,
+                    "endOffset": 2123
+                },
+                "from": {
+                    "file": "D:\\elin\\jiakaozhixing\\ElinDriverSchool\\library\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 155,
+                        "endColumn": 45,
+                        "endOffset": 196
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2128,
+                    "endColumn": 43,
+                    "endOffset": 2167
+                },
+                "from": {
+                    "file": "D:\\elin\\jiakaozhixing\\ElinDriverSchool\\library\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 110,
+                        "endColumn": 43,
+                        "endOffset": 149
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2172,
+                    "endColumn": 51,
+                    "endOffset": 2219
+                },
+                "from": {
+                    "file": "D:\\elin\\jiakaozhixing\\ElinDriverSchool\\library\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 51,
+                        "endOffset": 104
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2224,
+                    "endLine": 37,
+                    "endColumn": 12,
+                    "endOffset": 2469
+                },
+                "from": {
+                    "file": "D:\\elin\\jiakaozhixing\\ElinDriverSchool\\library\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 253,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 510
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2474,
+                    "endLine": 40,
+                    "endColumn": 12,
+                    "endOffset": 2649
+                },
+                "from": {
+                    "file": "D:\\elin\\jiakaozhixing\\ElinDriverSchool\\library\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endLine": 6,
+                        "endColumn": 12,
+                        "endOffset": 245
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 2654,
+                    "endLine": 43,
+                    "endColumn": 12,
+                    "endOffset": 2829
+                },
+                "from": {
+                    "file": "D:\\elin\\jiakaozhixing\\ElinDriverSchool\\library\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 518,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 704
+                    }
+                }
+            }
+        ]
+    }
+]

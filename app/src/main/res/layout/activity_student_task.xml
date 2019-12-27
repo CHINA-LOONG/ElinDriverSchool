@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.elin.elindriverschool.activity.StudentTaskActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_task_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/return_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_task_title"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_advertising_title"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <RadioButton
+                android:id="@+id/rb_not_student_terminal"
+                style="@style/rbStudentTask"
+                android:background="@drawable/selector_send_goods_store"
+                android:checked="true"
+                android:text="未使用学员端"/>
+
+            <RadioButton
+                android:id="@+id/rb_not_task"
+                style="@style/rbStudentTask"
+                android:text="未完成任务"
+                android:background="@drawable/bg_unfinished_task" />
+            <RadioButton
+                android:id="@+id/rb_assisting_task"
+                android:text="助力任务"
+                style="@style/rbStudentTask"
+                android:background="@drawable/selector_send_goods_other" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_gray"/>
+    <RelativeLayout
+        android:id="@+id/rl_task_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

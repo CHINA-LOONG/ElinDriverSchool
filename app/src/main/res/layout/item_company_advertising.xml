@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_relative"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_company_advertising_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/tv_company_advertising_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我是标题"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:layout_toLeftOf="@+id/iv_company_advertising_pic"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+</RelativeLayout>

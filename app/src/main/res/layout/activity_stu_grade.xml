@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/ll_stu_grade_title"
+        layout="@layout/custom_go_back"/>
+
+    <LinearLayout
+        android:id="@+id/ll_stu_grade_title_2"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/ll_stu_grade_class"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_stu_grade_class"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:text="科目一"
+                android:textColor="@color/text_color_light_dark"
+                android:gravity="center"
+                />
+            <ImageView
+                android:id="@+id/imv_stu_grade_class_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_arrow_down"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/line_height"
+            android:layout_height="match_parent"
+            android:background="@color/line_color_gray"/>
+        <LinearLayout
+            android:id="@+id/ll_stu_grade_score"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_stu_grade_score"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:text="全部成绩"
+                android:textColor="@color/text_color_light_dark"
+                android:gravity="center"
+                />
+            <ImageView
+                android:id="@+id/imv_stu_grade_score_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_arrow_down"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"/>
+    <LinearLayout
+        android:id="@+id/ll_check_score_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <!--<com.chanven.lib.cptr.PtrClassicFrameLayout-->
+            <!--xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/ptr_view_check_score"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#f0f0f0"-->
+            <!--cube_ptr:ptr_duration_to_close="200"-->
+            <!--cube_ptr:ptr_duration_to_close_header="700"-->
+            <!--cube_ptr:ptr_keep_header_when_refresh="true"-->
+            <!--cube_ptr:ptr_pull_to_fresh="false"-->
+            <!--cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"-->
+            <!--cube_ptr:ptr_resistance="1.8" >-->
+
+            <!--<ListView-->
+                <!--android:id="@+id/lv_check_score"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:dividerHeight="@dimen/line_height"-->
+                <!--android:divider="@color/line_color_gray"-->
+                <!--android:scrollbars="none"-->
+                <!--&gt;-->
+            <!--</ListView>-->
+
+
+        <!--</com.chanven.lib.cptr.PtrClassicFrameLayout>-->
+    </LinearLayout>
+    <include android:id="@+id/ll_check_score_no_data"
+        layout="@layout/layout_bg_nodata"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

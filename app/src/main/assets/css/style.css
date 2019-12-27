@@ -1,0 +1,365 @@
+/*index css*/
+/*功能模块*/
+.errorall{
+    font-size:12px;
+    color:#fa952f;position:absolute; right:0;top:0;line-height:48px
+}
+.bannerbox {height: 3.04rem;}
+.bannerbox img{width:100% ;}
+.nav-class{padding:0.25rem;overflow: hidden;background:#fff}
+.nav-class .nav{width:1.74rem;margin:0.15rem 0;font-size:14px ; color:#666 ;}
+.nav-class .nav img{width:1.0rem; display: block;margin:0 auto ;}
+.nav-class .nav p{width:1.74rem;text-align:center;padding-top:0.2rem ;}
+
+/*陪驾动态*/
+.newbox{background:#FFFFFF;}
+.newbox .n-title{padding:0 0.25rem;height: 48px;line-height: 48px;margin-bottom:12px;position: relative;}
+.newbox .n-title .left i{position:absolute;left:0.25rem;top:17px;display:block;width:16px;height:14px;
+background:url(../img/index/dongtai@2x.png) no-repeat ;background-size:16px 14px;}
+.newbox .n-title .left label{position:absolute;left:0.8rem;font-size:16px;color:#333 ;}
+.newbox .n-title .right label{font-size: 12px;color:#999 ;position:absolute;right:0.54rem;}
+.newbox .n-title .right i{position:absolute;right:0.25rem;top:18px;display:block;width:6px;height:12px;
+background:url(../img/index/right@2x.png) no-repeat ;background-size:6px 12px;}
+
+.n-list{padding: 0 0.25rem;overflow: hidden;}
+.n-list img{width:1.5rem ;height: 1.5rem;}
+.n-list .right{width: 5.25rem;padding-top:0.1rem ;}
+.n-list .right .world{font-size: 15px;color: #333333;line-height: 0.48rem; position:relative;
+ display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.n-list .right .date{font-size: 12px;color: #999;line-height: 0.64rem;}
+
+/*drivingServicce css*/
+/*学驾服务功能模块*/
+.nav-classds{margin-top:0.24rem;overflow: hidden;background:#fff;border-top:1px solid #e5e5e5;}
+.nav-classds .dservice{width:33% ;padding:0.48rem 0;border-right:1px solid #e5e5e5 ;border-bottom:1px solid #e5e5e5 ;font-size:14px ;}
+.nav-classds .dservice img{width:26px;height:26px;display: block;margin: 0 auto;}
+.nav-classds .dservice p{text-align: center;color:#333333;padding-top:0.24rem ;}
+.nav-classds .dservice:nth-child(3),.nav-classds .dservice:nth-child(6),.nav-classds .dservice:nth-child(9){border-right: 0;}
+
+/*培训班别*/
+.trainBox{width: 7.0rem;padding:0.25rem ;font-size:0.3rem ;}
+.trainBox .traintop label {line-height:40px ;}
+.trainBox .traintop .tname{font-size:15px ;color: #333333;}
+.trainBox .traintop .tsign{font-size:12px ;color: #fa952f;padding: 6px;border: 1px solid #FA952F;border-radius:4px ;}
+
+.trainBox .trainmiddle p{font-size:13px ;color: #999;line-height:30px ;}
+
+.trainBox .trainbottom{color: #fa952f;padding-top:8px ;}
+.trainBox .trainbottom span{font-size:13px ;}
+.trainBox .trainbottom b{font-size:18px ;}
+
+/*班别详情*/
+.traindBox{width: 7.0rem;padding:0 0.25rem ;font-size:0.3rem ;}
+.details .tdtitle{padding:0.28rem 0 ;overflow: hidden;}
+.details .tdtitle b{display:block;border-left:6px solid #18b4ed;line-height:22px;height:22px;font-size: 15px;padding-left:0.12rem;font-family:΢�����;color: #333333;}
+.details .tdlist{padding:12px 0 ;overflow: hidden;}
+.details label:first-child{font-size: 14px;color:#666 ;width:2.2rem ;}
+.details label{display: block;line-height:24px ;}
+.details .tselect label{line-height:30px ;}
+.details .tselect label.supse{width:1.2rem ;}
+.details label span{display: block;}
+.details label:last-child{font-size: 14px;color:#999 ;width: 4.8rem;}
+.details label.supse{width: 1.2rem;}
+.details label.yellow{color:#fa952f;}
+.supse{font-size: 14px;
+    color: #999;}
+.suse{font-size: 13px;color:#999 ;padding-top:12px ;}
+.suse a{font-size: 16px;color:#06BDF9 ;}
+/*learn css*/
+/*学车中心*/
+.learnBox{width:7.5rem; position:relative ;}
+.learnBox .carstate{width:90px;position: absolute;left: 0.25rem;top: 12px;}
+.learnBox .carstate img{width:90px ;}
+
+.learnBox .lc-list{position:relative;font-size:18px; text-align:center; color: #06bdf9; height:1.4rem ;line-height:1.4rem ;}
+.learnBox .lc-list .left,.learnBox .lc-list .right{width:3.6rem ;}
+.learnBox .lrh .left,.learnBox .lrh .right{width:3.6rem ;position: relative;height: 1.2rem;}
+.learnBox .lrh{font-size:18px;text-align:center; color: #06bdf9;height:1.2rem;}
+.red{color:#ff8067 ;}
+
+.learnBox .lrhs{font-size:18px;text-align:center; height: 1.2rem;color: #06bdf9;position: absolute;
+    bottom: 3.0rem;}
+.learnBox .lrhs .left{width:4.0rem ;height:1.2rem;position: relative;}
+.learnBox .lrhs .right{width:3.5rem ;height: 1.2rem;position: relative;}
+
+.learnBox i{display: inline-block;width: 52.5px; height:40px ;position: absolute; }
+.learnBox .lc-list i{left: 50%;margin-left:1rem ;}
+
+.learnBox .notstart{background:url(../img/learn/car.png) no-repeat ; background-size:44px ;}
+.learnBox .ongoing{background:url(../img/learn/cars.png) no-repeat ; background-size:44px ;}
+.learnBox .finished{background:url(../img/learn/wancheng.png) no-repeat ; background-size:44px ;}
+.learnBox b{padding: 12px;}
+.learnBox .lc-list .notstart{background:url(../img/learn/car.png) no-repeat ; background-size:44px ;top: 0.3rem;}
+.learnBox .lc-list .ongoing{background:url(../img/learn/cars.png) no-repeat ; background-size:44px ;top: 0.2rem;}
+.learnBox .lc-list .finished{background:url(../img/learn/wancheng.png) no-repeat ; background-size:40px ;top: 0.5rem;}
+
+.learnBox .lrh i{left: 50%;margin-left:-24px; top:30px;}
+
+.learnBox .lrhs .left i{left: 50%;margin-left:-16px; top: 26px;}
+.learnBox .lrhs .right i{left: 50%;margin-left:-30px; top: 26px;}
+
+.learnBox .pl{position:absolute;left:50%;height: 60px;
+    margin-left:-30px;font-size:18px;text-align:center; color: #06bdf9;bottom:1.6rem}
+.learnBox .pl i{left: 50%;margin-left:-20px ;top: 30px;}
+
+.pl_nazheng{position: absolute;
+    left:50%;
+    margin-left:-30px;
+    font-size: 18px;
+    text-align: center;
+    color: #06bdf9;
+    bottom: 18px;
+    width:80px}
+
+/*报名*/
+.careful{padding: 0.25rem;font-size:0.3rem ;}
+.careful .ctitle{color: #fa952f;font-size:16px;}
+.careful .cconten{color: #666;font-size:14px;line-height:20px ;margin-top:0.2rem ;}
+.allsubmit{height:44px; width: 7.5rem;position: fixed;z-index:2 ;bottom:0 ;left:50% ;margin-left:-3.75rem ;}
+.allsubmit button{background:#18b4ed;height:44px; display:block;width: 7.5rem;color: #FFFFFF;font-size:18px ;}
+.cttitle{padding:0.18rem 0.25rem;width:7rem ; background:#f4f4f4 ;font-size:15px ; color:#999;}
+
+/*教练员列表*/
+.coachBox {padding: 0 0.25rem; overflow: hidden;font-size:0.3rem;}
+.coachlist{padding: 12px 0;overflow: hidden;position: relative;}
+.coachlist .left:first-child{width: 80px;}
+.coachlist .left img{width: 70px;}
+.coachlist .left.ccl {width:4.5rem;position:relative ;}
+.coachlist .left.ccl .coname{line-height:30px;padding-bottom:12px ;}
+.coachlist .left.ccld{position:relative ;width:4.92rem}
+.coachlist .left.ccld .coname{line-height:30px;}
+.coachlist .left .copraise{line-height:26px;}
+/*教练员公告*/
+.i_coach .left:first-child{width:2rem;}
+.i_coach .left img{width: 1.75rem; height:1.75rem}
+.coachlist .coname label:first-child{color:#333 ;font-size:16px ;width:70px ;display: inline-block;}
+.coachlist .coname a.c-tel{width:60px;overflow: hidden;height:40px ;display:block;position:absolute;left: 1.0rem;top: 0;}
+.coname a i{display: block;width: 60px;height: 30px;background: url(../img/learn/dianhua@2x.png) no-repeat center; background-size:24px 24px ;}
+.coachlist .coname .cclp{color:#999 ;font-size:13px ;}
+.coachlist .cotype{color:#666666 ;font-size:13px ;line-height:20px;}
+.coachlist .cotype p{overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;white-space:nowrap;width:100%;}
+.coachlist .copraise{color:#999 ;font-size:13px ;}
+.coachlist .cclp{padding-left: 40px;}
+.goassess{font-size:14px ;color:#666666 ;padding: 0.6rem 0;}
+.goassess button{font-size:15px ;padding:6px 14px; color:#18B4ED ;border-radius:4px;border:1px solid #06BDF9 ; background:#FFFFFF ;}
+
+.coachBox .prompt{font-size:14px ;line-height: 20px;padding-bottom: 0.3rem;}
+
+/*toEvaluate css*/
+/*去评价*/
+/*评价工作人员多选*/
+
+
+.goevalBox{background:#fff; overflow: hidden;}
+.goevalBox .geselect{font-size:15px ;color:#999999 ;padding: 0.36rem 0;margin:0 0.25rem ;}
+
+.goevalBox .listbox{padding-bottom:0.2rem ;overflow: hidden;}
+.goevalBox .listbox .clist {width:1.375rem;margin-top: 0.25rem;padding:0 0.25rem;float: left;position:relative ;height:2.4rem ;}
+.goevalBox .listbox .clist  img{width:1.375rem ;}
+.goevalBox .listbox .clist label{display:block;width:1.375rem;height:1.375rem;font-size: 14px;color: #333;text-align: center;}
+
+.goevalBox .gedetails{margin: 0 0.25rem;padding-top:0.15rem;font-size: 14px; color:#333333;}
+.goevalBox .star_m{line-height:40px ;}
+.goevalBox .star_j{line-height:40px ;}
+.goevalBox .text{font-size: 14px;width:6.6rem ;height: 2.6rem;padding: 0.2rem;color:#666666 ;border:1px solid #E5E5E5;}
+.goevalBox .star_y {position:relative ; height:44px ;line-height:44px ;}
+.goevalBox .star_y i{width:60px ; height:44px ;background:url(../img/learn/weixuan@2x.png) center no-repeat ;background-size: 24px 24px;display:inline-block ;position: absolute; left:1.2rem;top: 0;}
+.goevalBox .star_y i.on{background:url(../img/learn/xuanzhong@2x.png) center no-repeat ;background-size: 24px 24px;}
+/*满意度评价*/
+.gedetails .star_mf{width: 4.5rem;}
+.gedetails .star_mf img{padding-left:10px ; padding-top:8px ;}
+#function-hint{color: #FA952F;font-size:14px ;}
+.gedetails .star_lp{padding-left:10px ;}
+.gedetails .star_lp span{color:#999 ;font-size:14px ;padding-right:5px ;}
+.gedetails .star_m label:first-child{width: 100px; display: inline-block;}
+.star_b{width:7.5rem ;background:#FFFFFF ; height:60px ;position:fixed ;left:50% ; bottom: 0;margin-left:-3.75rem ;}
+.btm{height: 40px ;display:block;margin:10px auto;background:#18B4ED ;border-radius:4px;width: 140px;color:#FFFFFF ;font-size:18px ;}
+/*user css*/
+/*我的*/
+.user-bg{height: 2.4rem;padding:1rem 0;width: 7.5rem;background: url(../img/user/bg@2x.png) no-repeat;position: relative;}
+.user-bg img{width:1.5rem ;display: block;margin: 0 auto;}
+.user-bg p{color: #FFFFFF;font-size: 18px;text-align: center;}
+.user-bg p.users{line-height:0.4rem ;padding-top:0.5rem ;}
+.user-bg p.login{font-size:15px;text-align: center;line-height:28px;width: 80px;border-radius:4px;margin: 0.4rem auto;background: #9dd4db;}
+.user-list{background: #FFFFFF;margin-top:12px;padding:0 0.25rem 0.24rem 0.25rem;}
+.unext li{background: url(../img/user/right@2x.png) no-repeat center right;color: #333;font-size:16px;}
+.user-list li{height: 48px;line-height: 48px;position:relative;border-bottom:1px solid #E5E5E5!important;}
+
+.user-list li i{width:24px;height:24px;display:inline-block;position: absolute;left: 0;top: 12px;}
+.user-list li i.pda{background:url(../img/user/ziliao@2x.png); background-size: 24px 24px;}
+.user-list li i.mev{background:url(../img/user/pingjia@2x.png); background-size: 24px 24px;}
+.user-list li i.pwd{background:url(../img/user/mima@2x.png); background-size: 24px 24px;}
+.user-list li label{padding-left: 0.72rem;}
+
+/*个人资料*/
+.personal-list {padding:0 0.25rem ;background: #FFFFFF;}
+.personal-list li{height:48px;line-height: 48px;font-size:16px;border-bottom:1px solid #E5E5E5;}
+.personal-list li label:first-child{color: #666;float:left;}
+.personal-list li p{color: #666;}
+.personal-list li label:last-child{float:right;color: #999;}
+.exit.h24{text-align: center; color: #666;font-size: 16px;}
+.exit{height: 44px;line-height: 44px;background:#fff ;}
+
+
+/*个人资料*/
+.password{font-size:0.28rem ;color: #999}
+.user-list li i.pwd-n{background:url(../img/user/xinmima@2x.png); background-size: 24px 24px;}
+.user-list li i.pwd-q{background:url(../img/user/querenmima@2x.png); background-size: 24px 24px;}
+.user-list input{padding-left: 0.72rem;color:#666 ;font-size:15px;}
+.user-list li i.name{background:url(../img/user/ziliao@2x.png); background-size: 24px 24px;}
+.user-list li i.tel{background:url(../img/user/shoujihao@2x.png); background-size: 24px 24px;}
+.user-list li i.pid{background:url(../img/user/shenfen@2x.png); background-size:  24px 24px;}
+/*登录*/
+.l-header{height: 48px; line-height:48px;width:7.5rem;}
+.l-header .back{position:absolute;left:0;top:0;overflow: hidden;}
+.l-header .back i{display: inline-block;width: 48px;height: 48px; background:url(../img/user/fanhui.png)no-repeat center ; background-size:12px 21px ;}
+.l-header .title{font-size:18px ;color:#fff ;text-align: center;}
+
+.loginBox{width:6.2rem;padding:0.1rem 0.25rem;border-radius:6px;margin:2.4rem auto 0 auto;height:96px ;border:1px solid #ccc;}
+.loginBox .loginDiv{position: relative;line-height:30px ;height:48px ;}
+.loginBox .loginDiv:first-child{border-bottom: 1px solid #CCCCCC;}                                                                                                                                                                                                                                   {height: 1rem;line-height: 0.6rem;position:relative;}
+.loginBox .loginDiv i{width: 24px ;height:24px;display:inline-block;position: absolute;left: 0;top:12px;}
+.loginBox .loginDiv i.idc{background:url(../img/user/user@2x.png); background-size:  24px 24px;}
+.loginBox .loginDiv i.pwds{background:url(../img/user/mima-bai@2x.png); background-size:  24px 24px;}
+.loginBox input {padding-left: 0.72rem;color: #CCCCCC;height: 48px;
+    display: block;font-size: 14px;background:none ;-webkit-box-shadow:none;outline:none}
+
+.submit{padding: 0.8rem 0.4rem;font-size: 15px;line-height:48px ;}
+.submit label{color: #FFFFFF;font-size: 14px;}
+.submit button{height:42px;color: #FFFFFF;font-size: 18px;line-height: 42px;width: 6.7rem;background:#18b4ed;}
+
+/*我的评价*/
+.evlBox{padding:0 0.3rem;background:#FFFFFF ;font-size:16px;}
+.evlBox .whole{padding: 0.25rem 0;color:#333 ;}
+
+.evlBox .evl-list{border-bottom:1px solid #E5E5E5 ;}
+.evlBox .evl-list:last-child{border: 0;}
+.evlBox .evl-top{height:0.6rem;position: relative;margin-top:0.3rem ;}
+.evlBox .evl-top img{width:0.6rem; height:0.6rem ;border-radius: 0.6rem;}
+.evlBox .evl-top label{font-size: 16px;color: #333; position: absolute;line-height:0.6rem;left:0.8rem;}
+.evlBox .evl-top .tel{height: 0.6rem; width:1.2rem ;display:inline-block;position: absolute;right:2.4rem ;background:url(../img/user/dianhua@2x.png) center no-repeat ; background-size:24px ;}
+
+.evlBox .evl-centre{height:0.8rem;line-height:0.8rem ;}
+.evlBox .evl-centre .left>img{width:14px;margin-left: 8px;}
+.evlBox .evl-centre .left:first-child{padding-right:1rem ;}
+.evlBox .evl-centre .e-state{color:#fa952f;font-size: 14px;margin-left: 8px;}
+
+.evlBox .evl-bottom p:first-child{font-size: 14px;color: #333;}
+.evlBox .evl-bottom p:last-child{font-size: 12px;color: #999;padding: 0.3rem 0;}
+/*更换教练*/
+.goevalBox .view{font-size:14px; color: #333333;line-height:30px ;}
+.goevalBox{font-size:0.3rem ;}
+
+/*支队建档*/
+.fitime{padding:0.12rem 0.25rem 0.25rem 0.25rem;}
+.fitime .f-time{overflow: hidden; font-size:14px ;}
+.fitime .f-place{font-size:14px ;padding-top:12px;}
+.fitime .f-place span.f-addres{color:#999999 ;}
+.fitime .f-place span.f-name{color:#666 ;}
+.fitime .goassess{padding:0.3rem 0 0 0;font-size:14px ;}
+.f-tel{position:relative ;}
+.f-tel a{overflow: hidden;}
+.f-tel i.c-tel{width:40px ; height: 24px;position: absolute; right:0 ; display: block;background:url(../img/learn/dianhua@2x.png) no-repeat  center;
+background-size:24px 24px;}
+/*科目一css*/
+.subjectBox{font-size:16px ;padding:0 0.25rem;background:#FFFFFF ;}
+.subjectBox li img{width:24px;}
+.subjectBox li span{display:inline-block; color:#333333 ;line-height: 24px;}
+.subjectBox li{padding: 12px 0; height:24px; overflow: hidden;}
+.subjectBox li .lfirst{padding-right:20px ;}
+
+.mycoach{padding:0.25rem 0; overflow:hidden ;position:relative ;}
+.mycoach img{width:44px ; height:44px ;border-radius: 44px;}
+
+.mycoach i.c-tel{width:1.2rem ; height: 40px; display: inline-block;background:url(../img/learn/dianhua@2x.png) no-repeat  center;
+background-size:28px 28px;}
+.mycoach .toelev{top:18px;position:absolute;right:0;color:#06BDF9 ;border-radius:4px;border:1px solid #06BDF9;height:0.64rem ;width:1.4rem;text-align:center ;}
+.mycoach .toelev span{line-height:0.64rem;}
+.mycoach .left span{color:#333333 ;font-size:16px ;line-height:40px;padding-left:12px ;}
+.mycoach .left{height: 48px; overflow: hidden;}
+.mycoache .left{width:3rem ; color:#333 ;font-size:16px ;}
+.mycoache .left span{color:#666666 ;font-size:15px ;}
+
+/*填写考试信息*/
+.textiBox{padding: 0.25rem;font-size:16px ;}
+.textiBox .textitop{color: #333333;padding:6px 0;}
+/*是否乘班车*/
+.textiBox .text_y {position:relative ; height:44px ;line-height:44px ;}
+.textiBox .text_y i{width:60px ; height:44px ;background:url(../img/learn/weixuan@2x.png) center no-repeat ;background-size: 24px 24px;display:inline-block ;position: absolute;left: 70px; top:8px;}
+.textiBox .text_y i.on{background:url(../img/learn/xuanzhong@2x.png)  center no-repeat ;background-size: 24px 24px;}
+
+.textiBox ul li{padding:8px 0;line-height:32px ;position: relative;}
+.textiBox .textibottom li label:first-child{color: #666666;display:inline-block;font-size:15px ;width:80px ;}
+.textiBox .textibottom li label.textc{color: #999;font-size:15px ;display:inline-block;}
+.textiBox .textibottom li label.textc span{border:1px solid #ccc ; padding-left:0.2rem ; display: inline-block;width:3.6rem ;}
+.textiBox .textibottom li label select{width:3.6rem ;height: 34px;line-height: 32px;font-size: 15px;color:#999999 ;padding-left:0.2rem;font-family:���� ;border: 1px solid #CCCCCC;}
+.textiBox .textibottom li label option{height: 32px;line-height: 32px;font-size: 14px;color:#999999 ;font-family:���� ;}
+.textiBox ul li .tchange{position:absolute ; right: 0.25rem;top: 8px; height:48px ;}
+.textiBox ul li .tchange span{width:60px;text-align:center;display:inline-block;border:1px solid #18B4ED; color:#18B4ED ;border-radius:4px ;}
+
+.text_b{width:7.5rem ;background:#FFFFFF ; height:60px ;position:fixed ;left:50% ; bottom: 0;margin-left:-3.75rem ;}
+.text_btm{height: 40px ;display:block;margin:10px auto;border-radius:4px;width: 140px;color:#18B4ED ;background:#FFFFFF;font-size:18px ; border:1px solid #18B4ED ;}
+
+.driveDetails{padding:0.25rem;font-size:16px ;}
+.driveDetails .dDtitle{font-size:16px ; color:#333333;line-height:24px;padding-bottom:0.12rem;}
+.driveDetails .dDtime{font-size:13px ;color:#999999 ;text-align: right;}
+
+.driveDetails .dDcontent{font-size:14px ; color:#666666 ;margin-top:0.3rem ;}
+.driveDetails .dDcontent p{text-indent:2em;line-height:20px;margin-top:0.25rem ;}
+.driveDetails .dDcontent img{width:7rem ;padding-top:0.25rem;}
+
+/*客服中心*/
+.fcbtnbox{width:6.4rem;margin:0 auto;font-size:16px;}
+.b_radius{border-radius:4px;}
+.fcbtnbox .ftbn, .fcbtnbox .ctbn{border-radius:4px;width:6.4rem;height:40px;line-height:40px;color:#fff;text-align:center;}
+.fcbtnbox .ftbn{background:#18b4ed;margin-top:40px;}
+.fcbtnbox .ctbn{background:#fa5cad;margin-top:12px;margin-bottom:40px;}
+.tab-con-item .text {
+    width: 6.6rem;
+    height: 4rem;
+    padding: 0.2rem;
+    color: #666666;
+    border:1px solid #E5E5E5;
+}
+.tab-con-item .star_j{margin-bottom: 60px;}
+
+/*学员报名*/
+.signUpBox{padding:0 0.25rem;font-size:14px ;overflow:hidden}
+.signUpList{padding:0.25rem 0;position: relative;overflow:hidden;border-bottom: 1px solid #E5E5E5;}
+.signUpList .sUtop .sU_title{font-size:15px ; color:#333;padding-left:12px;line-height:26px;}
+.signUpList .sUtop{overflow:hidden;margin:0 auto;width:140px}
+.signUpList .sUtop img{width:26px;height:26px;}
+.signUpList .l_name{width:2.4rem;text-align:right;color:#626262;font-size:15px;line-height:26px;}
+.signUpList .r_inf{width:4.0rem;}
+.signUpList .r_inf input{height:20px;}
+.signUpList .r_inf select{width:3rem;color:#666;height:26px;font-size:15px ;position: relative;}
+.signUpList .r_inf select i{position: relative;}
+.signUpList .r_inf lable{color:#999;}
+
+/*学员报名end*/
+/*驾校信息*/
+.driveInfn{width: 6.5rem;margin:0 auto 0.2rem auto ;font-size:14px ;
+    overflow: hidden;background:#FFFFFF ;padding:0.25rem ; border: 1px solid #E5E5E5;}
+.driveInfn .dIl img{height:60px ; width:60px ;}
+.driveInfn .dIr{width:4.25rem ;height:60px ;padding-left:0.25rem ;}
+.driveInfn .dIr .left{font-size:18px ;color: #666;}
+.driveInfn  .gotel lable{font-size:14px ;color: #999;}
+.driveInfn  .gotel p{font-size:16px ;color: #333;}
+.driveInfn i.c-tel{width:60px ; height: 60px; display: inline-block;background:url(../img/learn/dianhua@2x.png) no-repeat  center;
+background-size:30px 30px;}
+.DIFtop{padding:0.2rem 0 0.2rem 20px;font-size:16px ;background:#F8F8F8;border-bottom: 1px solid #E5E5E5;}
+.driveInfn .left .dIrname { color: #333333; font-size: 18px; line-height: 36px; }
+.driveInfn .ckefu{color: #999;font-size: 14px;line-height:22px ;}
+.gotel{height:60px;line-height:30px;}
+.sU_btn{width:7rem;margin:32px auto;height:40px;background:#18b4ed;font-size: 16px;color: #ffffff;text-align:center;line-height:40px;border-radius；4px}
+/*提示css*/
+.info_error{position: fixed;top:300px;width:5.5rem;height:40px;left:1rem;background:#000;z-index: 5;
+   display:none; -moz-opacity: 0.5;opacity: 0.5;filter: alpha(opacity=50);border-radius: 4px;
+    color:#fff;font-size:15px;line-height:40px;text-align: center;}
+.uploadBox{padding:0.2rem;font-size:14px;}
+.uploadBox p{line-height:40px;}
+.uploadBox img{width:7.1rem}
+/*班车路线shuttlebox css*/
+.shuttlebox{width:7.1rem;margin:0 auto 0.2rem auto; background:#fff;padding:0.32rem 0;border:1px solid #e5e5e5}
+.shuttlebox .shu_title{font-size:16px;padding:0 0.2rem;color:#333;margin-bottom:0.24rem;}
+.shu_line{font-size:14px;color:#999;padding:0 0.2rem;line-height:24px;}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>学驾服务</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/owl.carousel.css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js" ></script>
+    <script type="text/javascript" src="js/common.js" ></script>
+    <script type="text/javascript" src="callBack.js" ></script>
+    <!--<script type="text/javascript" src="toActivity.js" ></script>-->
+</head>
+<body>
+		<!--轮播图 -->		
+		<div class="m_banner" id="owl" style="width:100%" >
+				<a "><img src="img/index/banner@2x.png"/></a>
+				<a "><img src="img/index/banner1.jpg"/></a>
+				<a "><img src="img/index/banner2.jpg"/></a>
+		</div>
+		<!--轮播图end -->
+		<!--功能模块 -->
+		<div id="homepage" class="nav-class">
+			<!--<a href="javascript:driveCenter.toActivity()">-->
+			
+				<div id = "drivingCenter" class="nav left">
+					<img src="img/index/ch_jiashi.png" />
+					<p>驾考中心</p>
+				</div>
+			
+			 <!--<a href="signUp.html">-->
+			 
+				<div id = "signUp" class="nav left" >
+					<img src="img/index/ch_baoming.png" />
+					<p>学员报名</p>
+				</div>
+			
+			
+				<div class="nav left" onClick="alert('开发中');">
+					<img src="img/index/ch_changdi.png" />
+					<p>培训场地</p>
+				</div>
+			
+			
+				<div class="nav left" onClick="alert('开发中');">
+					<img src="img/index/ch_kaoshi.png" />
+					<p>考试场地</p>
+				</div>
+			
+			
+				<div class="nav left" onClick="alert('开发中');">
+					<img src="img/index/ch_peixun.png" />
+					<p>我的培训</p>
+				</div>
+			
+			
+			<!--<a href="../DrivingForStudent/service/shuttleRoute.html">-->
+				<div class="nav left" onClick="alert('开发中');">
+					<img src="img/index/ch_banche.png" />
+					<p>班车路线</p>
+				</div>
+			
+			
+				<div class="nav left" onClick="alert('开发中');">
+					<img src="img/index/ch_xuanchuan.png" />
+					<p>推广宣传</p>
+				</div>
+			 
+			<!--<a href="../DrivingForStudent/scustomer/Feedback.html">-->
+			
+				<div class="nav left" onClick="alert('开发中');">
+					<img src="img/index/ch_jianyi.png" />
+					<p>意见建议</p>
+				</div>
+			
+		</div>
+		<!--功能模块end -->
+		<!--陪驾动态 -->
+		<div id="dynamic" class="newbox h24">
+			<div class="n-title border-b">
+				<div class="left">
+					<i></i>
+					<label>陪驾动态</label>
+				</div>
+				<div class="right" id = "messageAll">
+					
+						<label >查看全部</label>
+						<i></i>
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+		</div>
+		<!--陪驾动态end -->
+		<div class="h50"></div>
+		
+	</body>
+	<script type="text/javascript">	
+	
+	$(function() {
+		$.ajax({
+			 url: "/DrivingForStudent/getHomepageInfo.rpc", 
+			 type: "post",               
+			 dataType: "json",           
+			 async:false,
+			 success:function(data){
+			 	var drivingCarouselInfo = data.drivingCarouselInfo;
+			 	var drivingCarouselStr = JSON.parse(drivingCarouselInfo);
+			 	var drivingHomepageInfo = data.drivingHomepageInfo;
+			 	var drivingHomepageStr = JSON.parse(drivingHomepageInfo);
+			 	var drivingDynamicInfo = data.drivingDynamicInfo;
+			 	var drivingDynamicStr = JSON.parse(drivingDynamicInfo);
+			 	
+			 	/*$.each(drivingCarouselStr, function(i, item) {
+			      $("#carousel").append("<img src='"+item.carousel_img+"'/>");
+			    });
+			    
+			 	$.each(drivingHomepageStr, function(i, item) {
+			      $("#homepage").append("<a href='service/uploadBox.html?inner_id="+item.inner_id+
+			      "'><div class='nav left'><img src='"+item.homepage_img+
+			      "' /><p>"+item.homepage_name+"</p></div></a>");
+			    });
+			    */
+                <!--			    <input type='hidden' value = '123'></input> href='driveDynamic.html?inner_id="+item.inner_id+
+                 "'-->
+			    $.each(drivingDynamicStr, function(i, item) {
+			      $("#dynamic").append("<div class='n-list'><img src='"+item.dynamic_img+
+			      "' /><div class='right' id = 'messageCell'>
+                      <input type='hidden' value = inner_id></input>
+                      <p class='world'>"+item.dynamic_title+
+			      "</p>
+                  <p class='date'>"+item.dynamic_date+
+			      "</p>
+                  </div>
+                  </div>");
+			    });
+				
+			 }
+		});
+			
+	});
+	
+</script>
+</html>

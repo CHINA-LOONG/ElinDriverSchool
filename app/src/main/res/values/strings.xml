@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">驾考之星</string>
+    <string name="advertising">推广宣传</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Home fragment</string>
+    <string name="submit">提\n\n交</string>
+    <string name="app_user_auto_start">由于Android系统限制，请您手动开启本软件自启动权限，并将此软件设置为受保护应用以及允许后台运行，从而保障软件运行的最佳环境</string>
+    <string name="sub">考试科目：</string>
+    <string name="sub_score">考试成绩：</string>
+    <string name="fail_code">扣分代码：</string>
+    <string name="none_code">缺考原因：</string>
+    <string name="sub_one">科目一</string>
+    <string name="sub_two">科目二</string>
+    <string name="sub_three">科目三</string>
+    <string name="sub_four">科目四</string>
+    <string name="date">考试日期：</string>
+    <string name="test_name">学员姓名：</string>
+    <string name="site">考试场地：</string>
+    <string name="shuttle">乘坐班车：</string>
+    <string name="date_select_tip">请选择考试日期</string>
+    <string name="site_select_tip">请选择考试场地</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DATABASE_INFO">
+        <item>json.db</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="CREATE_TABLE_SQL">
+        <item>CREATE TABLE json (id INTEGER PRIMARY KEY AUTOINCREMENT,contact TEXT)</item>
+    </string-array>
+
+    <string-array name="UPDATE_TABLE_SQL">
+        <item></item>
+    </string-array>
+</resources>

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\elin\\jiakaozhixing\\ElinDriverSchool\\DatePicker\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\elin\\jiakaozhixing\\ElinDriverSchool\\DatePicker\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "15",
+                        "endColumns": "19",
+                        "endOffsets": "407"
+                    }
+                }
+            ]
+        }
+    ]
+}

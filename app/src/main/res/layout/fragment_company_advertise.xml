@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elin.elindriverschool.fragment.CompanyAdvertiseFragment">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_company_advertising"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_company_advertising"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--<TextView-->
+        <!--android:id="@+id/tv_empty_company_advertising"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="暂无系统消息"-->
+        <!--android:textSize="17sp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:visibility="gone"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/press_relative"
+    android:id="@+id/item_ll_msg_top">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/item_img_message_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_msg_xiaoxi"
+                    />
+                <TextView
+                    android:id="@+id/item_tv_message_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:maxEms="3"
+                    android:text="3"
+                    android:textSize="11sp"
+                    android:layout_marginLeft="-12dp"
+                    android:layout_toRightOf="@+id/item_img_message_icon"                    android:background="@drawable/shape_tv_message" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/item_tv_message_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/paddingTop"
+            android:layout_marginLeft="60dp"
+            android:text="消息"
+            android:textSize="@dimen/text_small_size" />
+</RelativeLayout>

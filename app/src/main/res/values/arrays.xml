@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stu_types">
+        <item>经手人</item>
+        <item>教练员</item>
+        <item>调车</item>
+        <item>已结业</item>
+        <item>待超期</item>
+        <item>待不合格超次</item>
+        <item>未使用学员端</item>
+    </string-array>
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="home_menu">
+        <item>驾考中心</item>
+        <item>培训场地</item>
+        <item>考试场地</item>
+        <item>线上报名</item>
+        <item>班车路线</item>
+        <item>推广宣传</item>
+        <item>学驾流程</item>
+    </string-array>
+    <string-array name="home_menu_img">
+        <item>home_driving_center</item>
+        <item>home_training_venue</item>
+        <item>home_test_venue</item>
+        <item>home_my_training</item>
+        <item>home_bus_route</item>
+        <item>home_advertising</item>
+        <item>home_driving_process</item>
+    </string-array>
+
+    <string-array name="online_registration">
+        <item>培训班别</item>
+        <item>预报名</item>
+    </string-array>
+    <string-array name="online_registration_img">
+        <item>home_my_training</item>
+        <item>ic_signup_advance</item>
+    </string-array>
+
+    <string-array name="drive_center_menu">
+        <item>我的学员</item>
+        <!--<item>待受理学员</item>-->
+        <item>待考学员</item>
+        <item>预约成功学员</item>
+        <item>成绩上传</item>
+        <item>学员成绩</item>
+        <item>班车查看</item>
+        <item>预约培训</item>
+        <item>驾考学员统计</item>
+        <item>学员回访</item>
+        <item>学员任务</item>
+
+    </string-array>
+    <string-array name="drive_center_img">
+        <item>icon_my_stus</item>
+        <!--<item>icon_wait_test</item>-->
+        <item>icon_wait_test</item>
+        <item>icon_test_pre_suc</item>
+        <item>icon_upload_info</item>
+        <item>icon_check_stu_grades</item>
+        <item>ic_bus_ride</item>
+        <item>ic_appoint_train</item>
+        <item>ic_stu_count</item>
+        <item>ic_visit_return</item>
+        <item>ic_stu_task</item>
+
+    </string-array>
+    <string-array name="sub">
+        <item>全部</item>
+        <item>科目一</item>
+        <item>科目二</item>
+        <item>科目三</item>
+        <item>科目四</item>
+        <item>支队建档</item>
+    </string-array>
+
+    <string-array name="template_sub">
+        <item>全部</item>
+        <item>科目二</item>
+        <item>科目三</item>
+        <item>科二和科三</item>
+    </string-array>
+
+    <string-array name="steps">
+        <item>学员已报名</item>
+        <item>学员已收费</item>
+        <item>支队已建档</item>
+        <item>科一已通过</item>
+        <item>科二已通过</item>
+        <item>科三已通过</item>
+        <item>科二、科三已通过</item>
+        <item>科四已通过</item>
+    </string-array>
+    <string-array name="steps_id">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_color_gray"
+    android:orientation="vertical">
+    <include android:id="@+id/ll_msg_activity_title"
+        layout="@layout/custom_go_back"/>
+    <include android:id="@+id/ll_msg_activity_no_data"
+        layout="@layout/layout_bg_nodata"/>
+
+</LinearLayout>

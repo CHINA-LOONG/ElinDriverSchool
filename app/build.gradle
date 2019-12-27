@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.elin.elindriverschool"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+        //极光 配置信息
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "d5f9279b9dd150d1c02f2c55", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+    }
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildToolsVersion '27.0.3'
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:24.2.1'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //通过JsBridge 实现H5与原生交互
+    compile project(':cptr')
+    compile project(':rcimageview')
+    compile project(':SlideListViewlibrary')
+    compile project(':DatePicker')
+    compile project(':indexlib')
+    compile files('libs/android-async-http-1.4.6.jar')
+    compile files('libs/universal-image-loader-1.8.6-with-sources.jar')
+    compile files('libs/aliyun-oss-sdk-android-2.2.0.jar')
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile project(':MaterialCalendarView')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:1.2.0'
+    compile 'com.jakewharton:butterknife:7.0.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okio:okio:1.7.0'
+    compile 'cn.jiguang.sdk:jpush:3.0.5'
+    compile 'cn.jiguang.sdk:jcore:1.1.2'
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
+    compile 'cn.bingoogolapple:bga-banner:2.1.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'com.lovedise:permissiongen:0.0.6'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/MiPush_SDK_Client_3_4_5.jar')
+    compile files('libs/HwPush_SDK_V2705.jar')
+}

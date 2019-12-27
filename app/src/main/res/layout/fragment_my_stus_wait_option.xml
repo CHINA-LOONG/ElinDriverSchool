@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_wait_option_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.chanven.lib.cptr.PtrClassicFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ptr_view_wait_test_stu_option"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f0f0f0"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="700"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.8" >
+
+        <ListView
+            android:id="@+id/lv_wait_test_wait_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="@dimen/line_height"
+            android:divider="@color/line_color_gray"
+            android:scrollbars="none"
+            >
+        </ListView>
+
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/marginTop"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_light_dark"
+                android:text="受理日期："
+                />
+            <TextView
+                android:id="@+id/tv_wait_operation_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_nomal"
+                android:paddingLeft="@dimen/marginLeft"
+                android:paddingRight="@dimen/marginLeft"
+                android:background="@drawable/text_shape"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:hint="————————"
+                android:textColorHint="@color/text_gray"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/ll_wait_test_bus_ride"
+                android:paddingLeft="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_light_dark"
+                    android:textSize="@dimen/text_small_size"
+                    android:text="是否乘坐班车："
+                    />
+                <CheckBox
+                    android:id="@+id/tv_wait_test_bus_ride"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_nomal"
+                    android:textSize="@dimen/text_small_size"
+                    android:button="@null"
+                    android:background="@drawable/check_box_selector" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_wait_option_stu_submit"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:text="提   交"
+            android:textSize="@dimen/text_normal_size"
+            android:background="@drawable/select_register_btn"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+    <include android:id="@+id/ll_wait_option_no_data"
+        layout="@layout/layout_bg_nodata"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

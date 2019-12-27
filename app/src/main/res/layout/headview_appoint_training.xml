@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+       android:id="@+id/calendar_appoint_training"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:mcv_selectionColor="@color/white"
+       app:mcv_arrowColor="@color/white"
+       android:background="@color/colorPrimary"
+       app:mcv_dateTextAppearance="@color/mcv_text_date_light"
+       app:mcv_weekDayTextAppearance="@color/white"/>
+    <TextView
+        android:id="@+id/tv_select_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center_horizontal"
+        android:background="@color/light_blue"/>
+</LinearLayout>

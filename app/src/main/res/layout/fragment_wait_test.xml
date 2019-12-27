@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.elin.elindriverschool.fragment.WaitTestFragment">
+
+    <RelativeLayout
+        android:id="@+id/ll_wait_test_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_wait_test_bottom">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/srl_wait_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_wait_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <com.mcxtzhang.indexlib.IndexBar.widget.IndexBar
+                android:id="@+id/indexBar_contact"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:indexBarPressBackground="@color/partTranslucent"
+                app:indexBarTextSize="16sp"/>
+            <TextView
+                android:id="@+id/tvSideBarHint_contact"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_side_bar_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="48sp"
+                android:visibility="gone"
+                tools:text="A"
+                tools:visibility="visible"/>
+        </RelativeLayout>
+
+        <include android:id="@+id/ll_wait_test_bottom"
+            layout="@layout/layout_wait_test_class_bottom"/>
+    </RelativeLayout>
+    <include
+        android:id="@+id/ll_wait_test_no_data"
+        layout="@layout/layout_bg_nodata"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SubWaitTestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include android:id="@+id/ll_test_title"
+            layout="@layout/custom_go_back"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_test_title">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/srl_wait_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_wait_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <com.mcxtzhang.indexlib.IndexBar.widget.IndexBar
+                android:id="@+id/indexBar_contact"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:indexBarPressBackground="@color/partTranslucent"
+                app:indexBarTextSize="16sp"/>
+            <TextView
+                android:id="@+id/tvSideBarHint_contact"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_side_bar_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="48sp"
+                android:visibility="gone"
+                tools:text="A"
+                tools:visibility="visible"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/fab_operate"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/fab"
+            android:text="提交"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</FrameLayout>

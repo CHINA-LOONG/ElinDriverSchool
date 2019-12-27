@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.elin.elindriverschool.activity.AddAppointActivity">
+    <include layout="@layout/custom_go_back"
+        android:id="@+id/title_add_appoint"/>
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendar_add_appoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_selectionColor="@color/white"
+        app:mcv_arrowColor="@color/white"
+        android:background="@color/colorPrimary"
+        app:mcv_dateTextAppearance="@color/mcv_text_date_light"
+        app:mcv_weekDayTextAppearance="@color/white"
+        android:layout_below="@+id/title_add_appoint"/>
+
+</RelativeLayout>

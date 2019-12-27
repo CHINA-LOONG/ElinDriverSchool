@@ -1,0 +1,166 @@
+/*公共部分的样式*/
+body,
+div,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+fieldset,
+legend,
+input {
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+
+}
+
+input[type="radio"] {
+	border: none;
+	-webkit-appearance:none;
+	outline:none
+}
+html {
+	width: 100%;
+	font-family: 'Heiti SC', 'Microsoft YaHei';
+	outline: 0;
+	-webkit-text-size-adjust: none;
+}
+input{
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+ 	-webkit-appearance: none;
+    outline: none;
+    border: none;
+    }
+button{outline: none;border: none;font-family: ����;}
+input:focus{border:none;}
+input,button,select,textarea,a,select{border-radius: 0;outline:none;-webkit-tap-highlight-color: transparent;}
+select{-webkit-appearance: none;background-color:#fff;border:none;box-shadow:none;}
+textarea{resize:none;border: 1px solid #ccc;-webkit-appearance: none;}
+body {
+	font-family:黑体;
+	max-width:750px;
+	margin: 0 auto;
+	-webkit-user-select: none;
+	background: #f3f3f3;
+	
+}
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+.clear{clear: both;}
+a:hover,
+a:link,
+a:visited,
+a {
+	color: inherit;
+	text-decoration: none;
+	background:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+ul,
+li {
+	list-style: none
+}
+
+input::-webkit-input-placeholder {
+	color:#999999 ;font-size:13px ;
+}
+input:-moz-placeholder {
+　　color:#999999 ;font-size:13px ;
+}
+input::-moz-placeholder {
+　color:#999999 ;font-size:13px ;
+}
+input:-ms-input-placeholder {
+　color:#999999 ;font-size:13px ;
+}
+
+textareat::-webkit-input-placeholder {
+	color:#999999 ;font-size:13px ;
+}
+textarea:-moz-placeholder {
+　　color:#999999 ;font-size:13px ;
+}
+textarea::-moz-placeholder {
+　color:#999999 ;font-size:13px ;
+}
+textarea:-ms-input-placeholder {
+　color:#999999 ;font-size:13px ;
+}
+.yellow{color:#fa952f;}
+.w-Box{width:7.5rem;overflow: hidden;}
+.h24{margin-top:12px ;}
+.h25{margin-top:25px ;}
+.hp12{padding-top:12px ;}
+.h12px{height:12px;background:#F3F3F3 ;}
+.h48{height:48px ;}
+.border-b{border-bottom:1px solid #e5e5e5 ;}
+.border-t{border-top:1px solid #e5e5e5 ;}
+.h50{height: 51px;}
+.b-none{border-bottom:0 ;}
+.fs26{color:#666666 ;font-size:14px;}
+/*头部*/
+header{height: 48px; width:7.5rem;position: fixed;top: 0;background:#fff ;
+
+z-index: 2;line-height:48px ;}
+header .back{position:absolute;left:0;top:0;overflow: hidden;}
+header .back i{display: inline-block;width: 48px;height: 48px; background:url(../img/user/fanhuis@2x.png)no-repeat center ; background-size:12px 21px ;}
+header .title{font-size:18px ;color:#333333 ;text-align: center;border-bottom: 1px solid #cfcfcf;}
+
+/*底部*/
+footer{border-top:1px solid #e5e5e5 ;height: 50px;width:7.0rem;padding:0 0.25rem;position: fixed;bottom: 0;background:#FFFFFF ;}
+footer .mune{width:1.75rem ;float: left;height: 46px;padding-top:4px;font-size:15px;}
+footer .mune img{width:24px; height: auto;text-align: center;display:block;margin:0 auto ;}
+footer .mune p{font-size:12px ; line-height:20px;color:#999999;text-align: center;line-height:24px ;}
+
+
+
+.selectAddress{position: fixed;z-index: 4; width:7.5rem;height:6rem;bottom: 0;left:0;background:#FFFFFF ;}
+
+.r_inf input::-webkit-input-placeholder,
+#myinput::-webkit-input-placeholder {
+ font-size:15px;
+}
+.r_inf input:-moz-placeholder,
+#myinput:-moz-placeholder {
+  font-size:15px;
+}
+.r_inf input:-ms-input-placeholder,
+#myinput:-ms-input-placeholder {
+ font-size:15px;
+}
+
+/*温馨提示*/
+
+.bg_show{
+	position: fixed;
+	top: 0;
+	left:0;
+	display:none;
+	width: 7.5rem;
+	background:#000000;
+    z-index:3;
+    -moz-opacity: 0.5;
+    opacity: 0.50;
+    filter: alpha(opacity=50);}
+  .offcarBox{display:none;}
+.promptBox{width:7rem;display:none;background:#f8f8f8;position: fixed;left:0.25rem;border-radius:8px; z-index:4; height:220px}
+.promptb{width:7rem;position: fixed;left:0.25rem;height:220px;z-index:5;background:url(../images/tishi.png) no-repeat top center;background-size:120px;}
+.p_titile{margin-top:96px;font-size:18px;text-align: center;color:#333}
+.p_conter{margin-top:30px;font-size:16px;text-align: center;color:#333;padding:0 0.25rem}
+.p_button{margin:10px auto;width:120px}
+.p_button button{color:#fff;width:120px;font-size:15px;background:#17b4eb;border-radius:32px;padding:12px 0;}

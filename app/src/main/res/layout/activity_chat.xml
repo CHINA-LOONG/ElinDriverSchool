@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rl_chat_root"
+    tools:context="com.elin.elindriverschool.activity.ChatActivity">
+
+    <include layout="@layout/custom_go_back"
+        android:id="@+id/chat_title"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:fastScrollEnabled="false"
+        android:layout_above="@+id/rl_chat"
+        android:layout_below="@+id/chat_title"
+        android:paddingBottom="8dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:id="@+id/rl_chat"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:id="@+id/tv_send"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/select_border_login"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"/>
+            <EditText
+                android:id="@+id/reply_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="来说两句吧..."
+                android:background="@drawable/chat_rct"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:layout_toLeftOf="@+id/tv_send"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_upload_grade_stu_info_container"
+    android:background="@color/line_color_gray"
+    android:orientation="vertical">
+
+    <include android:id="@+id/ll_upload_grade_stu_info_title"
+        layout="@layout/custom_go_back"
+        />
+    <!--考试信息-->
+    <LinearLayout
+        android:id="@+id/ll_upload_grade_stu_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marginLeft"
+            android:text="考试成绩信息"
+            android:textColor="@color/text_color_nomal"
+            android:textSize="@dimen/text_normal_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginLeft">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="考试科目："
+                    android:textColor="@color/text_color_light_dark"
+                    android:textSize="@dimen/text_normal_size" />
+
+                <TextView
+                    android:id="@+id/tv_upload_grade_stu_info_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginTop"
+                    android:textColor="@color/text_color_nomal"
+                    android:textSize="@dimen/text_normal_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginLeft="@dimen/marginTop"
+                android:layout_marginRight="@dimen/marginTop"
+                android:background="@color/line_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginLeft">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="考试日期："
+                        android:textColor="@color/text_color_light_dark"
+                        android:textSize="@dimen/text_normal_size" />
+
+                    <TextView
+                        android:id="@+id/tv_upload_grade_stu_info_test_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginTop"
+                        android:textColor="@color/text_color_nomal"
+                        android:textSize="@dimen/text_normal_size" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8">
+
+                    <TextView
+                        android:id="@+id/tv_upload_grade_stu_info_change_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/text_shape_primary"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/paddingTop"
+                        android:paddingLeft="@dimen/marginLeft"
+                        android:paddingRight="@dimen/marginLeft"
+                        android:paddingTop="@dimen/paddingTop"
+                        android:text="修改"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_normal_size" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginLeft="@dimen/marginTop"
+                android:layout_marginRight="@dimen/marginTop"
+                android:background="@color/line_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/marginLeft">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="考试场地："
+                        android:textColor="@color/text_color_light_dark"
+                        android:textSize="@dimen/text_normal_size" />
+
+                    <TextView
+                        android:id="@+id/tv_upload_grade_stu_info_test_site"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginTop"
+                        android:textColor="@color/text_color_nomal"
+                        android:textSize="@dimen/text_normal_size" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8">
+
+                    <TextView
+                        android:id="@+id/tv_upload_grade_stu_info_change_site"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/text_shape_primary"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/paddingTop"
+                        android:paddingLeft="@dimen/marginLeft"
+                        android:paddingRight="@dimen/marginLeft"
+                        android:paddingTop="@dimen/paddingTop"
+                        android:text="修改"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_normal_size" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_marginLeft="@dimen/marginTop"
+                android:background="@color/line_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginLeft">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="考试成绩："
+                    android:textColor="@color/text_color_light_dark"
+                    android:textSize="@dimen/text_normal_size" />
+
+                <TextView
+                    android:id="@+id/tv_upload_grade_stu_info_score"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/marginTop"
+                    android:text="合格"
+                    android:background="@drawable/text_shape"
+                    android:textColor="@color/text_color_nomal"
+                    android:textSize="@dimen/text_normal_size" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_upload_grade_stu_info_submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:text="提交成绩"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal_size"
+            android:background="@drawable/select_register_btn"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="提示：请核对学员信息，若有不符，请修改"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="@dimen/text_small_size" />
+
+    </LinearLayout>
+
+</LinearLayout>
