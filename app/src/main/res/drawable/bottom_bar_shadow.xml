@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--阴影-->
+    <item
+        android:height="5dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="#AA000000"
+                android:startColor="#00ffffff" />
+
+<!--            <corners-->
+<!--                android:bottomLeftRadius="6dip"-->
+<!--                android:bottomRightRadius="6dip"-->
+<!--                android:topLeftRadius="6dip"-->
+<!--                android:topRightRadius="6dip" />-->
+        </shape>
+    </item>
+    <!--阴影-->
+
+    <!--白色背景-->
+    <item
+        android:top="5dp">
+
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:endColor="#FFFFFF"
+                android:startColor="#FFFFFF" />
+        </shape>
+    </item>
+
+</layer-list>
