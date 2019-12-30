@@ -23,6 +23,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.elin.elindriverschool.R;
 import com.elin.elindriverschool.activity.AdvertisingActivity;
+import com.elin.elindriverschool.activity.AppointmentActivity;
 import com.elin.elindriverschool.activity.DriveCenterActivity;
 import com.elin.elindriverschool.activity.LoginActivity;
 import com.elin.elindriverschool.activity.OnlineRegistrationActivity;
@@ -308,6 +309,9 @@ public class HomeNewFragment extends BaseFragment {
                         drivingProcess.putString("url", Constant.DYNAMIC_URL + "/DrivingService/studyProcess.html?school_id="+BaseApplication.getInstance().getSchoolId());
                         drivingProcess.putString("title", "学驾流程");
                         goToActivity(getActivity(), WebViewActivity.class, drivingProcess);
+                        break;
+                    case 7:
+                        goToActivity(getActivity(), AppointmentActivity.class);
                         break;
                 }
             }

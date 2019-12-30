@@ -4,91 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/line_color_gray"
+    android:background="@color/bg_gray"
     tools:context=".activity.AppointmentActivity">
 
-    <RelativeLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="49dp"
         android:layout_gravity="top"
-        android:background="@color/white"
+        android:background="@color/colorPrimary"
         android:paddingTop="@dimen/paddingTop">
 
         <ImageView
             android:id="@+id/imv_cus_title_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:src="@drawable/icon_title_go_back"
-            android:tint="#333333" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="100dp"
-            android:layout_marginRight="100dp">
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mcv_action_next"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_cus_title_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53" />
 
-            <ImageView
-                android:id="@+id/iv_previous"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:paddingLeft="10dp"
-                android:paddingRight="20dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/mcv_action_previous"
-                android:tint="@color/colorPrimaryDark2" />
-
-
-            <TextView
-                android:id="@+id/tv_cus_title_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:ellipsize="end"
-                android:maxEms="10"
-                android:singleLine="true"
-                android:textColor="@color/colorPrimaryDark2"
-                android:textSize="19sp"
-                tools:text="2019.12.15">
+        <TextView
+            android:id="@+id/tv_cus_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.39"
+            tools:text="2019.12.15">
 
 
-            </TextView>
+        </TextView>
 
-            <ImageView
-                android:id="@+id/iv_next"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:paddingLeft="20dp"
-                android:paddingRight="10dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/mcv_action_next"
-                android:tint="@color/colorPrimaryDark2" />
 
-        </RelativeLayout>
-
+        <ImageView
+            android:id="@+id/iv_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/mcv_action_previous"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_cus_title_name"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_setting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:gravity="center"
-            android:textColor="#333333"
+            android:textColor="@color/white"
             android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:lineSpacingExtra="25sp"
+            android:text="设置"
             tools:text="设置" />
-    </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,7 +108,7 @@
             android:background="@color/line_color_gray" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal"
@@ -140,18 +142,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <android.support.design.widget.TabItem
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="tab1"></android.support.design.widget.TabItem>
+            <!--            <android.support.design.widget.TabItem-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:text="tab1"></android.support.design.widget.TabItem>-->
 
-            <android.support.design.widget.TabItem
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="tab2">
+            <!--            <android.support.design.widget.TabItem-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:text="tab2">-->
 
-            </android.support.design.widget.TabItem>
+            <!--            </android.support.design.widget.TabItem>-->
         </android.support.design.widget.TabLayout>
+
 
         <android.support.v4.view.ViewPager
             android:id="@+id/vp_content"
@@ -200,14 +203,4 @@
             android:textColor="@color/white" />
 
     </RelativeLayout>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="-24dp"
-        android:alpha="0.6"
-        android:background="#47FFFFFF"
-        android:scaleType="centerCrop"
-        android:src="@drawable/exercise_test1"
-        android:visibility="invisible" />
 </FrameLayout>

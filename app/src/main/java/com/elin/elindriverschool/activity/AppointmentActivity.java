@@ -21,11 +21,14 @@ import java.util.List;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import butterknife.ButterKnife;
 
-public class AppointmentActivity extends AppCompatActivity {
+
+public class AppointmentActivity extends BaseActivity {
 
 
     private List<String> tabIndicators= Arrays.asList("Tab1","Tab2");
+
     private TabLayout mTabTl;
     private ViewPager mContentVp;
 
@@ -36,19 +39,20 @@ public class AppointmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appointment);
+        ButterKnife.bind(this);
 
 
         mTabTl = (TabLayout) findViewById(R.id.tl_tab);
         mContentVp = (ViewPager) findViewById(R.id.vp_content);
 
-        initTab();
-        initContent();
+//        initContent();
+//        initTab();
     }
 
     private void initTab(){
         mTabTl.setTabMode(TabLayout.MODE_FIXED);
-        mTabTl.setSelectedTabIndicatorHeight(0);
-        mTabTl.setTabTextColors(ContextCompat.getColor(this,R.color.bg_gray),ContextCompat.getColor(this,R.color.white));
+//        mTabTl.setSelectedTabIndicatorHeight(0);
+//        mTabTl.setTabTextColors(ContextCompat.getColor(this,R.color.bg_gray),ContextCompat.getColor(this,R.color.white));
         ViewCompat.setElevation(mTabTl,10);
         mTabTl.setupWithViewPager(mContentVp);
     }

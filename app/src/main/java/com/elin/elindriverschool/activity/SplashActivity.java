@@ -172,6 +172,8 @@ public class SplashActivity extends BaseActivity {
         startActivity(intent);
 //        finish();
 
+//        startActivity(new Intent(this,AppointmentActivity.class));
+
     }
 
     private void goWelcome() {

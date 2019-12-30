@@ -22,6 +22,7 @@
         <item>班车路线</item>
         <item>推广宣传</item>
         <item>学驾流程</item>
+        <item>预约练车</item>
     </string-array>
     <string-array name="home_menu_img">
         <item>home_driving_center</item>
@@ -31,6 +32,7 @@
         <item>home_bus_route</item>
         <item>home_advertising</item>
         <item>home_driving_process</item>
+        <item>home_advertising</item>
     </string-array>
 
     <string-array name="online_registration">

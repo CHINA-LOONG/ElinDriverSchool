@@ -24,4 +24,8 @@
      <color name="light_blue">#e6f2fe</color>
     <color name="mid_gray">#848484</color>
     <color name="light_gray">#eeeeee</color>
+
+
+    <color name="text_title_black">#FF000000</color>
+
 </resources>
