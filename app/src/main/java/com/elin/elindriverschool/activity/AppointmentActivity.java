@@ -21,6 +21,7 @@ import java.util.List;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
 
 
@@ -29,7 +30,9 @@ public class AppointmentActivity extends BaseActivity {
 
     private List<String> tabIndicators= Arrays.asList("Tab1","Tab2");
 
+    @Bind(R.id.tl_tab)
     private TabLayout mTabTl;
+    @Bind(R.id.vp_content)
     private ViewPager mContentVp;
 
     private List<Fragment> tabFragments;
@@ -42,8 +45,8 @@ public class AppointmentActivity extends BaseActivity {
         ButterKnife.bind(this);
 
 
-        mTabTl = (TabLayout) findViewById(R.id.tl_tab);
-        mContentVp = (ViewPager) findViewById(R.id.vp_content);
+//        mTabTl = (TabLayout) findViewById(R.id.tl_tab);
+//        mContentVp = (ViewPager) findViewById(R.id.vp_content);
 
 //        initContent();
 //        initTab();

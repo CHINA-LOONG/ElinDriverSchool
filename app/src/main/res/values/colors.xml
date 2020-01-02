@@ -27,5 +27,7 @@
 
 
     <color name="text_title_black">#FF000000</color>
+    <color name="bottom_bar_text">#0E65B1</color>
+    <color name="appointment_text">#333333</color>
 
 </resources>

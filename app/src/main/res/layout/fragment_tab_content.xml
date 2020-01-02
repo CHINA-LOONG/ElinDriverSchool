@@ -12,7 +12,8 @@
         android:id="@+id/rv_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_recyclerview_tree">
+        tools:itemCount="3"
+        tools:listitem="@layout/item_recyclerview_tree2">
 
     </android.support.v7.widget.RecyclerView>
 

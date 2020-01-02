@@ -5,7 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewOutlineProvider;
 import android.widget.TextView;
 
 import com.elin.elindriverschool.R;
@@ -48,25 +47,25 @@ public class TreeAdapter extends RecyclerView.Adapter<TreeAdapter.ViewHolder> im
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         final TreeItem treeItem = mList.get(position);
-        holder.mTextView.setText(treeItem.title);
-        if (position==mList.size()-1){
-            holder.mDivider.setVisibility(View.VISIBLE);
-        }else if (mList.get(position + 1).itemLevel == 0) {
-            holder.mDivider.setVisibility(View.VISIBLE);
-        } else {
-            holder.mDivider.setVisibility(View.INVISIBLE);
-        }
-
-        if (treeItem.child!=null&&treeItem.child.size()>0){
-            holder.tvState.setVisibility(View.VISIBLE);
-            if (treeItem.itemState==ITEM_STATE_OPEN){
-                holder.tvState.setText(" - ");
-            }else {
-                holder.tvState.setText(" + ");
-            }
-        }else {
-            holder.tvState.setVisibility(View.INVISIBLE);
-        }
+//        holder.mTextView.setText(treeItem.title);
+//        if (position==mList.size()-1){
+//            holder.mDivider.setVisibility(View.VISIBLE);
+//        }else if (mList.get(position + 1).itemLevel == 0) {
+//            holder.mDivider.setVisibility(View.VISIBLE);
+//        } else {
+//            holder.mDivider.setVisibility(View.INVISIBLE);
+//        }
+//
+//        if (treeItem.child!=null&&treeItem.child.size()>0){
+//            holder.tvState.setVisibility(View.VISIBLE);
+//            if (treeItem.itemState==ITEM_STATE_OPEN){
+//                holder.tvState.setText(" - ");
+//            }else {
+//                holder.tvState.setText(" + ");
+//            }
+//        }else {
+//            holder.tvState.setVisibility(View.INVISIBLE);
+//        }
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,18 +129,18 @@ public class TreeAdapter extends RecyclerView.Adapter<TreeAdapter.ViewHolder> im
     class ViewHolder extends RecyclerView.ViewHolder {
 
 
-        public View mIndicator;
-        public TextView tvState;
-        public TextView mTextView;
-        public View mDivider;
+//        public View mIndicator;
+//        public TextView tvState;
+//        public TextView mTextView;
+//        public View mDivider;
 
 
         ViewHolder(View itemView) {
             super(itemView);
-//            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this,itemView);
 //            tvState = (TextView) itemView.findViewById(R.id.tvState);
-            mTextView =(TextView) itemView.findViewById(R.id.tvTitle);
-            mDivider = itemView.findViewById(R.id.vDivider);
+//            mTextView =(TextView) itemView.findViewById(R.id.tvTime);
+//            mDivider = itemView.findViewById(R.id.vDivider);
         }
     }
 }

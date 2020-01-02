@@ -16,29 +16,28 @@
 
         <ImageView
             android:id="@+id/imv_cus_title_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="9dp"
+            android:layout_height="17dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:src="@drawable/icon_title_go_back"
+            android:src="@drawable/yylc_fh"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
         <ImageView
-            android:id="@+id/iv_next"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
+            android:id="@+id/iv_previous"
+            android:layout_width="6dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/mcv_action_next"
+            android:src="@drawable/jl_z"
             android:tint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/tv_cus_title_name"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.53" />
+            app:layout_constraintEnd_toStartOf="@+id/tv_cus_title_name"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_cus_title_name"
@@ -55,7 +54,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.39"
+            app:layout_constraintVertical_bias="0.45"
             tools:text="2019.12.15">
 
 
@@ -63,17 +62,18 @@
 
 
         <ImageView
-            android:id="@+id/iv_previous"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:id="@+id/iv_next"
+            android:layout_width="6dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/mcv_action_previous"
+            android:src="@drawable/jl_y"
             android:tint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tv_cus_title_name"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/tv_cus_title_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53" />
 
         <TextView
             android:id="@+id/tv_setting"
@@ -92,55 +92,55 @@
             tools:text="设置" />
     </android.support.constraint.ConstraintLayout>
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="49dp"
         android:background="@color/white"
         android:orientation="vertical">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginRight="1dp"
-            android:background="@color/line_color_gray" />
-
-        <LinearLayout
-            android:layout_width="400dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="@dimen/marginLeft">
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:text="今日开放预约"
+            android:textColor="@color/appointment_text"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingTop="3dp"
-                android:paddingBottom="3dp"
-                android:text="今日开放预约"
-                android:textColor="@color/text_color_light_dark"
-                android:textSize="17sp" />
+        <Switch
+            android:id="@+id/switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:checked="false"
+            android:switchMinWidth="20dp"
+            android:thumb="@drawable/switcher_thumb"
+            android:track="@drawable/switcher_track"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <Switch
-                android:id="@+id/switcher"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:checked="true" />
-        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/mid_margin"
-            android:background="@color/line_color_gray" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/white">
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tl_tab"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <!--            <android.support.design.widget.TabItem-->
             <!--                android:layout_width="match_parent"-->
@@ -155,18 +155,19 @@
             <!--            </android.support.design.widget.TabItem>-->
         </android.support.design.widget.TabLayout>
 
-
         <android.support.v4.view.ViewPager
             android:id="@+id/vp_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tl_tab">
 
 
         </android.support.v4.view.ViewPager>
-
-
-    </LinearLayout>
-
+    </android.support.constraint.ConstraintLayout>
+    
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
@@ -179,7 +180,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="帮学员约课"
-            android:textColor="@color/text_blue"
+            android:textColor="@color/bottom_bar_text"
             android:textSize="17sp" />
     </RelativeLayout>
 
@@ -199,7 +200,7 @@
             android:layout_marginBottom="78dp"
             android:background="@drawable/fab"
             android:gravity="center"
-            android:text="预约订单"
+            android:text="预约\n订单"
             android:textColor="@color/white" />
 
     </RelativeLayout>

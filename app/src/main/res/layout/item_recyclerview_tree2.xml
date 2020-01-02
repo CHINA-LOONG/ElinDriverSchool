@@ -1,75 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="146dp"
     android:background="@color/bg_gray">
 
-    <RelativeLayout
+    <View
+        android:id="@+id/vBg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/btn_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTime"
         android:layout_width="wrap_content"
-        android:layout_height="140dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_bg">
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="13dp"
+        android:singleLine="true"
+        android:textColor="@color/text_title_black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/vBg"
+        app:layout_constraintTop_toTopOf="@+id/vBg"
+        tools:text="测试" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
-            android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvDesc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="41dp"
+        android:text="已同意 1"
+        android:textColor="@color/bg_gray"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/vBg"
+        app:layout_constraintTop_toTopOf="@+id/vBg" />
 
+    <TextView
+        android:id="@+id/tvDesc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="41dp"
+        android:text="未处理 1"
+        android:textColor="@color/bg_gray"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvDesc1"
+        app:layout_constraintTop_toTopOf="@+id/vBg" />
 
-            <TextView
-                android:id="@+id/tvTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="测试内容测试内容"
-                android:textColor="@color/text_title_black"
-                android:textSize="22sp"
-                android:singleLine="true"
-                tools:text="08:00-12:00 可约2人/C1"
-                android:layout_gravity="start" />
-
-
-            <TextView
-                android:id="@+id/tvContent"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="已同意 1  未处理 1"
-                android:textColor="@color/bg_gray"
-                android:textSize="18sp"
-                android:layout_gravity="start" />
-
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/icon_arrow_down"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:background="@color/line_color_gray" />
-
-
-    </RelativeLayout>
+    <ImageView
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/icon_arrow_down"
+        app:layout_constraintEnd_toEndOf="@+id/vBg"
+        app:layout_constraintTop_toTopOf="@+id/vBg"
+        app:srcCompat="@drawable/jl_dh" />
 
     <LinearLayout
         android:id="@+id/vDivider"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#EDEDED"
         android:orientation="horizontal"
-        android:background="@color/bg_gray"/>
+        app:layout_constraintEnd_toEndOf="@+id/vBg"
+        app:layout_constraintStart_toStartOf="@+id/vBg"
+        app:layout_constraintTop_toTopOf="@id/vBg">
 
-</LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="88dp"
+        android:layout_weight="1"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/vBg"
+        app:layout_constraintTop_toTopOf="@+id/vBg"
+        tools:text="已同意，练车中" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="57dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/btn_bg"
+        android:text="调整"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vBg"
+        app:layout_constraintEnd_toEndOf="@+id/vBg" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="57dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/btn_bg"
+        android:text="取消"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vBg"
+        app:layout_constraintEnd_toEndOf="@+id/vBg" />
+
+</android.support.constraint.ConstraintLayout>

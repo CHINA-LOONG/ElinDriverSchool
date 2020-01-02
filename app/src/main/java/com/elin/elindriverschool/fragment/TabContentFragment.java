@@ -1,5 +1,6 @@
 package com.elin.elindriverschool.fragment;
 
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -17,11 +18,14 @@ import com.elin.elindriverschool.node.TreeItem;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 public class TabContentFragment extends Fragment {
 
     private static  final String EXTRA_CONTENT ="content";
 
-
+    @Bind(R.id.rv_list)
     private RecyclerView mRecyclerView;
 //    private NodeTreeAdapter adapter = new NodeTreeAdapter();
 
@@ -39,8 +43,12 @@ public class TabContentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View contentView = inflater.inflate(R.layout.fragment_tab_content,null);
 
-        mRecyclerView=(RecyclerView)contentView.findViewById(R.id.rv_list);
+        ButterKnife.bind(this,contentView);
+
+//        mRecyclerView=(RecyclerView)contentView.findViewById(R.id.rv_list);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        mRecyclerView.addItemDecoration(new SpacesItemDecoration(5));
 
         TreeAdapter treeAdapter = new TreeAdapter(getContext(), initList());
         mRecyclerView.setAdapter(treeAdapter);
@@ -136,4 +144,25 @@ public class TabContentFragment extends Fragment {
 
         return list;
     }
+
+    public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
+        private int space;
+
+        public SpacesItemDecoration(int space) {
+            this.space = space;
+        }
+
+        @Override
+        public void getItemOffsets(Rect outRect, View view,
+                                   RecyclerView parent, RecyclerView.State state) {
+            outRect.left = space;
+            outRect.right = space;
+            outRect.bottom = space;
+
+            // Add top margin only for the first item to avoid double space between items
+            if (parent.getChildPosition(view) == 0)
+                outRect.top = space;
+        }
+    }
+
 }
