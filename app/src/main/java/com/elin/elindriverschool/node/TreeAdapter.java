@@ -2,6 +2,7 @@ package com.elin.elindriverschool.node;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +41,12 @@ public class TreeAdapter extends RecyclerView.Adapter<TreeAdapter.ViewHolder> im
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_recyclerview_tree, parent, false));
+        Log.e("级别", viewType + "");
+        if (viewType == 0) {
+            return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_recyclerview_tree, parent, false));
+        } else {
+            return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_recyclerview_tree2, parent, false));
+        }
     }
 
 
@@ -70,10 +76,10 @@ public class TreeAdapter extends RecyclerView.Adapter<TreeAdapter.ViewHolder> im
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (treeItem.itemState==ITEM_STATE_CLOSE){
-                    onOpen(treeItem,holder.getAdapterPosition());
-                }else {
-                    onClose(treeItem,holder.getAdapterPosition());
+                if (treeItem.itemState == ITEM_STATE_CLOSE) {
+                    onOpen(treeItem, holder.getAdapterPosition());
+                } else {
+                    onClose(treeItem, holder.getAdapterPosition());
                 }
             }
         });
@@ -82,6 +88,12 @@ public class TreeAdapter extends RecyclerView.Adapter<TreeAdapter.ViewHolder> im
     @Override
     public int getItemCount() {
         return mList.size();
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        TreeItem item = mList.get(position);
+        return item.itemLevel;
     }
 
     @Override
@@ -137,7 +149,7 @@ public class TreeAdapter extends RecyclerView.Adapter<TreeAdapter.ViewHolder> im
 
         ViewHolder(View itemView) {
             super(itemView);
-            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this, itemView);
 //            tvState = (TextView) itemView.findViewById(R.id.tvState);
 //            mTextView =(TextView) itemView.findViewById(R.id.tvTime);
 //            mDivider = itemView.findViewById(R.id.vDivider);

@@ -20,9 +20,12 @@ import java.util.Arrays;
 import java.util.List;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 
 public class AppointmentActivity extends BaseActivity {
@@ -30,10 +33,13 @@ public class AppointmentActivity extends BaseActivity {
 
     private List<String> tabIndicators= Arrays.asList("Tab1","Tab2");
 
+    @Bind(R.id.iv_title_back)
+    ImageView ivBack;
+
     @Bind(R.id.tl_tab)
-    private TabLayout mTabTl;
+    TabLayout mTabTl;
     @Bind(R.id.vp_content)
-    private ViewPager mContentVp;
+    ViewPager mContentVp;
 
     private List<Fragment> tabFragments;
     private ContentPagerAdapter contentAdapter;
@@ -44,12 +50,8 @@ public class AppointmentActivity extends BaseActivity {
         setContentView(R.layout.activity_appointment);
         ButterKnife.bind(this);
 
-
-//        mTabTl = (TabLayout) findViewById(R.id.tl_tab);
-//        mContentVp = (ViewPager) findViewById(R.id.vp_content);
-
-//        initContent();
-//        initTab();
+        initContent();
+        initTab();
     }
 
     private void initTab(){
@@ -69,6 +71,16 @@ public class AppointmentActivity extends BaseActivity {
         contentAdapter = new ContentPagerAdapter(getSupportFragmentManager());
         mContentVp.setAdapter(contentAdapter);
     }
+
+    @OnClick({R.id.iv_title_back})
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.iv_title_back:
+                finish();
+                break;
+        }
+    }
+
 
 
     class ContentPagerAdapter extends FragmentPagerAdapter{

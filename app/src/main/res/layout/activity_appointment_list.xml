@@ -6,50 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".activity.AppointmentListActivity">
 
-
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="match_parent"
-        android:layout_height="49dp"
-        android:background="@color/colorPrimary"
+    <include
+        android:id="@+id/include2"
+        layout="@layout/appointment_hander"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="9dp"
-            android:layout_height="17dp"
-            android:layout_marginStart="17dp"
-            android:layout_marginLeft="17dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/yylc_fh" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="预约订单"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </android.support.constraint.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@color/bg_gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        android:background="@color/bg_gray"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
         tools:itemCount="2"
-        tools:listitem="@layout/item_appointment_list"/>
+        tools:listitem="@layout/item_appointment_list" />
 
 </android.support.constraint.ConstraintLayout>

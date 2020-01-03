@@ -38,7 +38,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.AppointmentListActivity"></activity>
+        <activity android:name=".activity.AppointmentSettingActivity"></activity>
+        <activity android:name=".activity.AppointmentStudentActivity" />
+        <activity android:name=".activity.AppointmentListActivity" />
         <activity android:name=".activity.SettingActivity" />
         <activity android:name=".activity.AppointmentActivity" />
         <activity

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\elinProject\jiakaozhixing\ElinDriverSchool\SlideListViewlibrary\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="D:\elinProject\jiakaozhixing\ElinDriverSchool\SlideListViewlibrary\src\release\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/xuelong/Development/Android/ElinDriverSchool/SlideListViewlibrary/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/Users/xuelong/Development/Android/ElinDriverSchool/SlideListViewlibrary/src/release/jniLibs"/></dataSet></merger>

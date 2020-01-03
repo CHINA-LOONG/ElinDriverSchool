@@ -1,15 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\elinProject\jiakaozhixing\ElinDriverSchool\DatePicker\AndroidManifest.xml:1:1-6:12
-INJECTED from D:\elinProject\jiakaozhixing\ElinDriverSchool\DatePicker\AndroidManifest.xml:1:1-6:12
-INJECTED from D:\elinProject\jiakaozhixing\ElinDriverSchool\DatePicker\AndroidManifest.xml:1:1-6:12
+ADDED from /Users/xuelong/Development/Android/ElinDriverSchool/DatePicker/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/xuelong/Development/Android/ElinDriverSchool/DatePicker/AndroidManifest.xml:1:1-6:12
+INJECTED from /Users/xuelong/Development/Android/ElinDriverSchool/DatePicker/AndroidManifest.xml:1:1-6:12
 	package
-		ADDED from D:\elinProject\jiakaozhixing\ElinDriverSchool\DatePicker\AndroidManifest.xml:2:5-45
-		INJECTED from D:\elinProject\jiakaozhixing\ElinDriverSchool\DatePicker\AndroidManifest.xml
-		INJECTED from D:\elinProject\jiakaozhixing\ElinDriverSchool\DatePicker\AndroidManifest.xml
+		ADDED from /Users/xuelong/Development/Android/ElinDriverSchool/DatePicker/AndroidManifest.xml:2:5-45
+		INJECTED from /Users/xuelong/Development/Android/ElinDriverSchool/DatePicker/AndroidManifest.xml
+		INJECTED from /Users/xuelong/Development/Android/ElinDriverSchool/DatePicker/AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\elinProject\jiakaozhixing\ElinDriverSchool\DatePicker\AndroidManifest.xml:1:11-69
+		ADDED from /Users/xuelong/Development/Android/ElinDriverSchool/DatePicker/AndroidManifest.xml:1:11-69
 uses-sdk
-ADDED from D:\elinProject\jiakaozhixing\ElinDriverSchool\DatePicker\AndroidManifest.xml:4:5-42
+ADDED from /Users/xuelong/Development/Android/ElinDriverSchool/DatePicker/AndroidManifest.xml:4:5-42
 	android:minSdkVersion
-		ADDED from D:\elinProject\jiakaozhixing\ElinDriverSchool\DatePicker\AndroidManifest.xml:4:15-40
+		ADDED from /Users/xuelong/Development/Android/ElinDriverSchool/DatePicker/AndroidManifest.xml:4:15-40

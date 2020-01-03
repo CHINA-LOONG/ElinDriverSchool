@@ -12,10 +12,11 @@
         android:layout_height="49dp"
         android:layout_gravity="top"
         android:background="@color/colorPrimary"
-        android:paddingTop="@dimen/paddingTop">
+        android:paddingTop="@dimen/paddingTop"
+        tools:visibility="visible">
 
         <ImageView
-            android:id="@+id/imv_cus_title_back"
+            android:id="@+id/iv_title_back"
             android:layout_width="9dp"
             android:layout_height="17dp"
             android:layout_marginStart="16dp"
@@ -82,13 +83,13 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:gravity="center"
+            android:text="设置"
             android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:lineSpacingExtra="25sp"
-            android:text="设置"
             tools:text="设置" />
     </android.support.constraint.ConstraintLayout>
 

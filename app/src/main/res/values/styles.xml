@@ -103,4 +103,8 @@
         <item name="android:layout_marginLeft">8dp</item>
 
     </style>
+
+    <style name="bluecheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_checkbox_blue</item>
+    </style>
 </resources>

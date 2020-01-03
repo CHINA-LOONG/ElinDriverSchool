@@ -26,8 +26,7 @@ public class TabContentFragment extends Fragment {
     private static  final String EXTRA_CONTENT ="content";
 
     @Bind(R.id.rv_list)
-    private RecyclerView mRecyclerView;
-//    private NodeTreeAdapter adapter = new NodeTreeAdapter();
+    RecyclerView mRecyclerView;
 
     public static TabContentFragment newInstance(String content){
         Bundle arguments = new Bundle();
@@ -45,10 +44,9 @@ public class TabContentFragment extends Fragment {
 
         ButterKnife.bind(this,contentView);
 
-//        mRecyclerView=(RecyclerView)contentView.findViewById(R.id.rv_list);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        mRecyclerView.addItemDecoration(new SpacesItemDecoration(5));
+//        mRecyclerView.addItemDecoration(new SpacesItemDecoration(5));
 
         TreeAdapter treeAdapter = new TreeAdapter(getContext(), initList());
         mRecyclerView.setAdapter(treeAdapter);
