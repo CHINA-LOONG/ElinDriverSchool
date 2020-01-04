@@ -31,7 +31,7 @@ import butterknife.OnClick;
 public class AppointmentActivity extends BaseActivity {
 
 
-    private List<String> tabIndicators= Arrays.asList("Tab1","Tab2");
+    private List<String> tabIndicators= Arrays.asList("科目二","科目三");
 
     @Bind(R.id.iv_title_back)
     ImageView ivBack;
@@ -72,11 +72,17 @@ public class AppointmentActivity extends BaseActivity {
         mContentVp.setAdapter(contentAdapter);
     }
 
-    @OnClick({R.id.iv_title_back})
+    @OnClick({R.id.iv_title_back,R.id.tv_setting,R.id.rl_helpstudent})
     public void onClick(View view){
         switch (view.getId()){
             case R.id.iv_title_back:
                 finish();
+                break;
+            case R.id.tv_setting:
+                goToActivity(this,AppointmentSettingActivity.class);
+                break;
+            case R.id.rl_helpstudent:
+                goToActivity(this,AppointmentStudentActivity.class);
                 break;
         }
     }

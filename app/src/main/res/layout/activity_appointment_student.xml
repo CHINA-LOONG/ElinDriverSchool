@@ -17,7 +17,7 @@
         app:layout_constraintTop_toBottomOf="@+id/include">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/et_search"
             android:layout_width="match_parent"
             android:layout_height="36dp"
             android:layout_marginStart="17dp"
@@ -29,6 +29,10 @@
             android:drawableLeft="@drawable/search"
             android:drawablePadding="@dimen/dp_10"
             android:hint="请输入学员姓名或者拼音首字母~"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
