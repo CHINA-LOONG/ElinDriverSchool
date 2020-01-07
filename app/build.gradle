@@ -93,4 +93,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile files('libs/MiPush_SDK_Client_3_4_5.jar')
     compile files('libs/HwPush_SDK_V2705.jar')
+    compile project(path: ':pickerview')
 }

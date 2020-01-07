@@ -42,7 +42,13 @@
         <activity android:name=".activity.AppointmentStudentActivity" />
         <activity android:name=".activity.AppointmentListActivity" />
         <activity android:name=".activity.SettingActivity" />
-        <activity android:name=".activity.AppointmentActivity" />
+        <activity android:name=".activity.AppointmentActivity">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
         <activity
             android:name=".activity.SplashActivity"
             android:theme="@style/MyTheme.NoTitleBar.CustomBackground">

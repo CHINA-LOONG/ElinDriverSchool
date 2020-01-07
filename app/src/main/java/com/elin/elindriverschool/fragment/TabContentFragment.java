@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,10 +17,14 @@ import com.elin.elindriverschool.node.TreeAdapter;
 import com.elin.elindriverschool.node.TreeItem;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
+import java.util.Locale;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import top.defaults.view.DateTimePickerView;
 
 public class TabContentFragment extends Fragment {
 
@@ -27,6 +32,9 @@ public class TabContentFragment extends Fragment {
 
     @Bind(R.id.rv_list)
     RecyclerView mRecyclerView;
+
+//    @Bind(R.id.datePickerView)
+//    DateTimePickerView dateTimePickerView;
 
     public static TabContentFragment newInstance(String content){
         Bundle arguments = new Bundle();
@@ -51,9 +59,30 @@ public class TabContentFragment extends Fragment {
         TreeAdapter treeAdapter = new TreeAdapter(getContext(), initList());
         mRecyclerView.setAdapter(treeAdapter);
 
+//
+//        dateTimePickerView.setStartDate(Calendar.getInstance());
+//// 注意：月份是从0开始计数的
+//        dateTimePickerView.setSelectedDate(new GregorianCalendar(2017, 6, 27, 21, 30));
+//        dateTimePickerView.setOnSelectedDateChangedListener(new DateTimePickerView.OnSelectedDateChangedListener() {
+//            @Override
+//            public void onSelectedDateChanged(Calendar date) {
+//                int year = date.get(Calendar.YEAR);
+//                int month = date.get(Calendar.MONTH);
+//                int dayOfMonth = date.get(Calendar.DAY_OF_MONTH);
+//                int hour = date.get(Calendar.HOUR_OF_DAY);
+//                int minute = date.get(Calendar.MINUTE);
+//                String dateString = String.format(Locale.getDefault(), "%d年%02d月%02d日%02d时%02d分", year, month + 1, dayOfMonth, hour, minute);
+////                textView.setText(dateString);
+////                Log.d(TAG, "new date: " + dateString);
+//            }
+//        });
         return  contentView;
     }
 
+
+    public void SetData(){
+        Log.i("更新数据","((((((((((()))))))))");
+    }
 
 
     private List<TreeItem> initList() {

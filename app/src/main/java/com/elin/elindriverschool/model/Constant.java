@@ -94,4 +94,9 @@ public class Constant {
     public static final String GET_BUS_LIST = "/ShuttleBus/getBusList";//通过日期获取当日班车信息
     public static final String GET_ORGANIZER = "/ShuttleBus/getOrganizer";//获取组织人员信息
     public static final String GET_ORDER_STU = "/ShuttleBus/getOrderStu";//获取乘坐班车学员
+
+    //预约练车
+    public static final String GET_ORDER_LISTS="/OrderCourse/orderLists";
+
+
 }

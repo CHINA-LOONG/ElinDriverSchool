@@ -1,1 +1,1 @@
-include ':app', ':rcimageview', ':cptr', ':SlideListViewlibrary', ':DatePicker', ':indexlib', ':MaterialCalendarView'
+include ':app', ':rcimageview', ':cptr', ':SlideListViewlibrary', ':DatePicker', ':indexlib', ':MaterialCalendarView', ':pickerview'
