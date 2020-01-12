@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tv_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="21dp"
@@ -44,6 +44,7 @@
 
 
             <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_edit_weeks"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@color/white">
@@ -62,7 +63,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView18"
+                    android:id="@+id/tv_appointment_weeks"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="29dp"
@@ -96,12 +97,14 @@
             </android.support.constraint.ConstraintLayout>
 
             <LinearLayout
+                android:id="@+id/ll_appointment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 tools:visibility="visible">
 
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/cl_weeks_1"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@color/white">
@@ -120,7 +123,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView11"
+                        android:id="@+id/iv_weeks_1"
                         android:layout_width="19dp"
                         android:layout_height="19dp"
                         android:layout_marginEnd="22dp"
@@ -141,6 +144,7 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/cl_weeks_2"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@color/white">
@@ -159,7 +163,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView12"
+                        android:id="@+id/iv_weeks_2"
                         android:layout_width="19dp"
                         android:layout_height="19dp"
                         android:layout_marginEnd="22dp"
@@ -180,6 +184,7 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/cl_weeks_3"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@color/white">
@@ -198,7 +203,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView13"
+                        android:id="@+id/iv_weeks_3"
                         android:layout_width="19dp"
                         android:layout_height="19dp"
                         android:layout_marginEnd="22dp"
@@ -219,6 +224,7 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/cl_weeks_4"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@color/white">
@@ -237,7 +243,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView14"
+                        android:id="@+id/iv_weeks_4"
                         android:layout_width="19dp"
                         android:layout_height="19dp"
                         android:layout_marginEnd="22dp"
@@ -258,6 +264,7 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/cl_weeks_5"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@color/white">
@@ -276,7 +283,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView15"
+                        android:id="@+id/iv_weeks_5"
                         android:layout_width="19dp"
                         android:layout_height="19dp"
                         android:layout_marginEnd="22dp"
@@ -297,6 +304,7 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/cl_weeks_6"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@color/white">
@@ -314,7 +322,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView16"
+                        android:id="@+id/iv_weeks_6"
                         android:layout_width="19dp"
                         android:layout_height="19dp"
                         android:layout_marginEnd="22dp"
@@ -335,6 +343,7 @@
                 </android.support.constraint.ConstraintLayout>
 
                 <android.support.constraint.ConstraintLayout
+                    android:id="@+id/cl_weeks_7"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@color/white">
@@ -353,7 +362,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView17"
+                        android:id="@+id/iv_weeks_7"
                         android:layout_width="19dp"
                         android:layout_height="19dp"
                         android:layout_marginEnd="22dp"
@@ -397,12 +406,13 @@
             </LinearLayout>
 
             <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_edit_times"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@color/white">
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/tv_time_end"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
@@ -415,7 +425,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView22"
+                    android:id="@+id/tv_appointment_times"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="29dp"
@@ -455,6 +465,7 @@
                 android:background="@color/bg_gray" />
 
             <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_edit_course"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:background="@color/white">
@@ -508,6 +519,7 @@
 
 
             <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_course"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white">
@@ -568,6 +580,7 @@
                     app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
                 <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_crouse"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="38dp"
@@ -578,7 +591,7 @@
                     tools:listitem="@layout/item_appointment_course" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/btn_crouse_add"
                     android:layout_width="75dp"
                     android:layout_height="26dp"
                     android:layout_marginBottom="14dp"

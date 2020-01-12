@@ -68,7 +68,7 @@ public class AddTemplateTimeActivity extends BaseActivity {
     LinearLayout llAddTemplateTime;
     @Bind(R.id.edt_person_limit)
     EditText edtPersonLimit;
-    @Bind(R.id.tv_start_time)
+    @Bind(R.id.tv_time_start)
     TextView tvStartTime;
     @Bind(R.id.tv_end_time)
     TextView tvEndTime;
@@ -143,7 +143,7 @@ public class AddTemplateTimeActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.imv_cus_title_back, R.id.tv_cus_title_right, R.id.tv_add_time_template,R.id.tv_start_time,R.id.tv_end_time})
+    @OnClick({R.id.imv_cus_title_back, R.id.tv_cus_title_right, R.id.tv_add_time_template,R.id.tv_time_start,R.id.tv_end_time})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.imv_cus_title_back:
@@ -208,7 +208,7 @@ public class AddTemplateTimeActivity extends BaseActivity {
                     adapter.addData(bean);
                 }
                 break;
-            case R.id.tv_start_time:
+            case R.id.tv_time_start:
                 popStartTimePicker();
                 break;
             case R.id.tv_end_time:

@@ -75,7 +75,7 @@ public class AddTemplateActivity extends BaseActivity implements SwipeRefreshLay
     LinearLayout llAddTemplateTime;
     @Bind(R.id.edt_person_limit)
     EditText edtPersonLimit;
-    @Bind(R.id.tv_start_time)
+    @Bind(R.id.tv_time_start)
     TextView tvStartTime;
     @Bind(R.id.tv_end_time)
     TextView tvEndTime;
@@ -209,13 +209,13 @@ public class AddTemplateActivity extends BaseActivity implements SwipeRefreshLay
         delDialog.show();
     }
 
-    @OnClick({R.id.imv_cus_title_back, R.id.tv_start_time, R.id.tv_end_time, R.id.tv_add_time_template, R.id.tv_save_template})
+    @OnClick({R.id.imv_cus_title_back, R.id.tv_time_start, R.id.tv_end_time, R.id.tv_add_time_template, R.id.tv_save_template})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.imv_cus_title_back:
                 finish();
                 break;
-            case R.id.tv_start_time:
+            case R.id.tv_time_start:
                 popStartTimePicker();
                 break;
             case R.id.tv_end_time:

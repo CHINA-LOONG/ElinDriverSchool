@@ -96,7 +96,12 @@ public class Constant {
     public static final String GET_ORDER_STU = "/ShuttleBus/getOrderStu";//获取乘坐班车学员
 
     //预约练车
-    public static final String GET_ORDER_LISTS="/OrderCourse/orderLists";
-
-
+    public static final String GET_COURSE_ORDER_LISTS="/OrderCourse/orderLists";
+    public static final String GET_COURSE_STUDENT_LISTS ="/OrderCourse/studentList";
+    public static final String GET_COURSE_SYSTEM="/OrderCourse/getSystem";
+    public static final String SET_COURSE_SYSTEM="/OrderCourse/systems";
+    public static final String GET_COURSE_TRAIN_MODEL="/OrderCourse/getTrainModel";
+    public static final String ADD_COURSE_TRAIN_MODEL="/OrderCourse/addTrainModel";
+    public static final String DEL_COURSE_TRAIN_MODEL="/OrderCourse/delTrainModel";
+    public static final String GET_COURSE_ORDER_TIME_LIST="/OrderCourse/orderTimeList";
 }

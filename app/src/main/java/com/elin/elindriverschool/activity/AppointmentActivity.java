@@ -104,9 +104,10 @@ public class AppointmentActivity extends BaseActivity {
         calendar = Calendar.getInstance();
         selCalendar = calendar;
 
-        initView();
         initContent();
         initTab();
+
+        initView();
     }
 
 
@@ -168,18 +169,12 @@ public class AppointmentActivity extends BaseActivity {
         Map<String,String> map = new HashMap<>();
         map.put("train_date", strCalendar);
         map.put("coach_idnum", BaseApplication.getInstance().getCoachIdNum());
-        map.put("train_sub","2");
+        map.put("train_sub",selTabIndex==0?"2":"3");
         map.put("school_id",BaseApplication.getInstance().getSchoolId());
-
-//        Log.i("参数",format.format(date)+"    /n"+
-//                BaseApplication.getInstance().getCoachIdNum()+"    /n"+
-//                "2"+"    /n"+
-//                BaseApplication.getInstance().getSchoolId()+"    /n");
-
-//        map.put("token",BaseApplication.getInstance().getToken());
+        map.put("token",BaseApplication.getInstance().getToken());
 
         Request request = new Request.Builder()
-                .url(Constant.ServerURL+Constant.GET_ORDER_LISTS)
+                .url(Constant.ServerURL+Constant.GET_COURSE_ORDER_LISTS)
                 .post(RequestBody.create(MEDIA_TYPE_JSON,new Gson().toJson(map)))
                 .build();
         OkHttpClient client = new OkHttpClient().newBuilder()
@@ -209,7 +204,6 @@ public class AppointmentActivity extends BaseActivity {
                 call.cancel();
             }
         });
-
     }
     private Handler mHandler = new Handler(){
         @Override
@@ -218,15 +212,15 @@ public class AppointmentActivity extends BaseActivity {
             switch (msg.what){
                 case 0:
                     Log.i("输出：",orderListsJson);
-                    orderListsBean = gson.fromJson(orderListsJson,OrderListsBean.class);
-                    if (orderListsBean!=null){
-                        if(!cacheBean.containsKey(strCalendar)){
-                            cacheBean.put(strCalendar,new HashMap<String, OrderListsBean>());
-                        }
-                        cacheBean.get(strCalendar).put(tabIndicators.get(selTabIndex),orderListsBean);
-                    }
-                    
-                    ((TabContentFragment)tabFragments.get(selTabIndex)).SetData();
+//                    orderListsBean = gson.fromJson(orderListsJson,OrderListsBean.class);
+//                    if (orderListsBean!=null){
+//                        if(!cacheBean.containsKey(strCalendar)){
+//                            cacheBean.put(strCalendar,new HashMap<String, OrderListsBean>());
+//                        }
+//                        cacheBean.get(strCalendar).put(tabIndicators.get(selTabIndex),orderListsBean);
+//                    }
+//
+//                    ((TabContentFragment)tabFragments.get(selTabIndex)).SetData();
                     break;
                 case 1:
                     break;

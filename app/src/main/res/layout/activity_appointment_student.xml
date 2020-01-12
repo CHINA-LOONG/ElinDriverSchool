@@ -7,11 +7,20 @@
     tools:context=".activity.AppointmentStudentActivity">
 
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/appointment_hander"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:background="@color/bg_gray"
+        android:background="#F3F5F7"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include">
@@ -29,17 +38,17 @@
             android:drawableLeft="@drawable/search"
             android:drawablePadding="@dimen/dp_10"
             android:hint="请输入学员姓名或者拼音首字母~"
-            android:inputType="text"
-            android:lines="1"
-            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
             android:paddingLeft="10dp"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/tv_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -53,13 +62,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
-
-    <include
-        android:id="@+id/include"
-        layout="@layout/appointment_hander"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -78,24 +80,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <android.support.design.widget.TabItem
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="tab1"></android.support.design.widget.TabItem>
+<!--            <android.support.design.widget.TabItem-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="tab1"></android.support.design.widget.TabItem>-->
 
-            <android.support.design.widget.TabItem
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="tab2">
+<!--            <android.support.design.widget.TabItem-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="tab2">-->
 
-            </android.support.design.widget.TabItem>
+<!--            </android.support.design.widget.TabItem>-->
         </android.support.design.widget.TabLayout>
 
         <android.support.v4.view.ViewPager
             android:id="@+id/vp_content"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@color/bg_gray"
+            android:background="#F3F5F7"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -115,13 +117,12 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/tv_select_student"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="22dp"
             android:layout_marginLeft="22dp"
             android:layout_marginBottom="15dp"
-            android:text="TextView"
             android:textColor="#333333"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -129,20 +130,19 @@
             tools:text="已选择" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/tv_student"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             android:layout_marginLeft="6dp"
-            android:text="TextView"
             android:textColor="#0E65B1"
             android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView13"
-            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_select_student"
+            app:layout_constraintStart_toEndOf="@+id/tv_select_student"
             tools:text="张萌" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btn_next"
             android:layout_width="76dp"
             android:layout_height="30dp"
             android:layout_marginEnd="22dp"
